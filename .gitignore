@@ -36,7 +36,7 @@ bower
 /instance/
 /static/
 node_modules
-/udata_front/theme/*/static/
+#/udata_front/theme/*/static/
 !/**/src/*.d.ts
 
 # Installer logs
