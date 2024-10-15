@@ -52,4 +52,3 @@ udata-ckan==3.0.3
 udata-piwik==4.1.0
 udata-recommendations==3.1.6
 uwsgi==2.0.21
-wheel==0.40.0
