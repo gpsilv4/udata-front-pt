@@ -3,35 +3,37 @@ Renaming collection from 'geo_zone' to 'GeoZone' and 'geo_level' to 'GeoLevel'
 """
 
 import logging
-from mongoengine.connection import connect, get_db
+import traceback
 
 log = logging.getLogger(__name__)
 
-def connect_to_mongo():
-    connect('udata', host='localhost', port=27017)
-
-def migrate():
-    log.info("Renaming collection from 'geo_zone' to 'GeoZone'.")
+def migrate(db):
+    """Rename collections in the MongoDB database."""
+    count = 0
+    errors = 0
     
-    # Connects to the database
-    db = get_db()
+    log.info("Starting the renaming process.")
 
-    # Checks if the ‘geo_zone’ collection exists
-    if 'geo_zone' in db.list_collection_names():
-       # Renew the collection
-       db.geo_zone.rename('GeoZone')
-       log.info("Rename successfully completed.")
-    else:
-       log.error("The ‘geo_zone’ collection does not exist in the database.")
-    
-    # Checks if the geo_level collection exists
-    if 'geo_level' in db.list_collection_names():
-       # Renew the collection
-       db.geo_level.rename('GeoLevel')
-       log.info("Rename successfully completed.")
-    else:
-       log.error("The geo_level collection does not exist in the database.")
+    try:
+        # Rename 'geo_zone' to 'GeoZone'
+        if 'geo_zone' in db.list_collection_names():
+            db.geo_zone.rename('GeoZone')
+            log.info("Renamed collection 'geo_zone' to 'GeoZone'.")
+            count += 1
+        else:
+            log.warning("'geo_zone' collection does not exist.")
 
-if __name__ == "__main__":
-    connect_to_mongo() 
-    migrate()
+        # Rename 'geo_level' to 'GeoLevel'
+        if 'geo_level' in db.list_collection_names():
+            db.geo_level.rename('GeoLevel')
+            log.info("Renamed collection 'geo_level' to 'GeoLevel'.")
+            count += 1
+        else:
+            log.warning("'geo_level' collection does not exist.")
+    except Exception as e:
+        log.error(f"An error occurred during renaming: {e}")
+        log.error(traceback.format_exc())
+        errors += 1
+
+    log.info("Renaming process completed.")
+    log.info(f"Successfully renamed {count} collections. Encountered {errors} errors.")
