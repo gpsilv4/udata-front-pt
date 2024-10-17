@@ -31,9 +31,9 @@ setup(
     description=__import__('udata_front').__description__,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/datagouv/udata-front',
-    author='Etalab',
-    author_email='pypi@data.gouv.fr',
+    url='https://github.com/amagovpt/udata-front-pt',
+    author='AMA - Agência para a Modernização Administrativa',
+    author_email='ama@ama.pt',
     packages=find_packages(),
     include_package_data=True,
     python_requires='>=3.8',
@@ -52,6 +52,16 @@ setup(
         ],
         'udata.harvesters': [
             'maaf = udata_front.harvesters.maaf:MaafBackend',
+            #'ckanpt = udata_front.harvesters.ckanpt:CkanPTBackend',
+            'dadosGov = udata_front.harvesters.dadosgov:DGBackend',
+            'apambiente = udata_front.harvesters.apambiente:PortalAmbienteBackend',
+            'ine = udata_front.harvesters.ine:INEBackend',
+            'odspt = udata_front.harvesters.odspt:OdsBackendPT',
+            'dgt = udata_front.harvesters.dgt:DGTBackend'
+        ],
+        'udata.views': [
+            'gouvfr_faqs = udata_front.faqs_plugin',
+            #'gouvfr_saml = udata_front.saml_plugin',
         ],
         'udata.tasks': [
             'front = udata_front.tasks',

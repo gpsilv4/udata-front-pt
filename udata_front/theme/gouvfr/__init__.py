@@ -46,37 +46,60 @@ gouvfr_menu = nav.Bar('gouvfr_menu', [
     nav.Item(_('Data'), 'datasets.list'),
     nav.Item(_('Reuses'), 'reuses.list'),
     nav.Item(_('Organizations'), 'organizations.list'),
-    nav.Item(_('Getting started on data.gouv.fr'), None, items=[
+    nav.Item(_('Getting started on dados.gov.pt'), None, items=[
         nav.Item(
-            _('What is data.gouv.fr?'),
+            _('About open data'),
             'gouvfr.show_page',
-            args={'slug': 'about/a-propos_data-gouv'}
+            args={'slug': 'faqs/about_opendata'}
         ),
         nav.Item(
-            _('How to publish data ?'),
+            _('About dados.gov'),
             'gouvfr.show_page',
-            args={'slug': 'onboarding/producteurs'}
+            args={'slug': 'faqs/about_dadosgov'}
         ),
         nav.Item(
-            _('How to use data ?'),
+            _('How to publish data?'),
             'gouvfr.show_page',
-            args={'slug': 'onboarding/reutilisateurs'}
+            args={'slug': 'faqs/publish'}
         ),
         nav.Item(
-            _('data.gouv.fr guides'),
-            None,
-            url=current_app.config.get('GUIDES_URL')
-        ),
+            _('How to reuse data?'),
+            'gouvfr.show_page',
+            args={'slug': 'faqs/reuse'}
+        ),  
+    ]),
+    nav.Item(_('Documentation'), None, items=[
+        nav.Item(
+            _('Licences'),
+            'gouvfr.show_page', 
+            args={'slug': 'faqs/licenses'}),
+        nav.Item(
+            _('Terms of use'),
+            'gouvfr.show_page', 
+            args={'slug': 'faqs/terms'}),
+        nav.Item(
+            _('Accessibility'),
+            'gouvfr.show_page', 
+            args={'slug': 'faqs/acessibilidade'}),
+        nav.Item(
+            _('API Tutorial'),
+            'gouvfr.show_page', 
+            args={'slug': 'api-tutorial'}),
+        nav.Item(_('API Reference'), 'gouvfr_faq.docapi'),
     ]),
     nav.Item(_('News'), 'posts.list'),
-    nav.Item(_('Contact us'), None, url=current_app.config.get('SUPPORT_URL', '#')),
+    nav.Item(_('Contact us'), 'gouvfr_faq.contact'),
 ])
 
 theme.menu(gouvfr_menu)
 
 opendata_links = [
-    nav.Item(_('Topics'), 'gouvfr.show_page', args={'slug': 'thematiques-a-la-une'}),
+    nav.Item(_('Topics'), 'gouvfr.show_page', args={'slug': 'temas-em-destaque'}),
     nav.Item(_('Reference Data'), 'gouvfr.show_page', args={'slug': 'spd/reference'}),
+    nav.Item(_('Portal for European data'), None, url='https://data.europa.eu'),
+    nav.Item(_('Data'), 'datasets.list'),
+    nav.Item(_('Reuses'), 'reuses.list'),
+    nav.Item(_('Organizations'), 'organizations.list'),
 ]
 
 export_dataset_id = current_app.config.get('EXPORT_CSV_DATASET_ID')
@@ -120,20 +143,21 @@ resources_links = [
 nav.Bar('gouvfr_resources', resources_links)
 
 footer_links = [
-    nav.Item(_('Licences'), 'gouvfr.show_page', args={'slug': 'legal/licences'}),
-    nav.Item(_('Terms of use'), 'gouvfr.show_page', args={'slug': 'legal/cgu'}),
+    nav.Item(_('Licences'), 'gouvfr.show_page', args={'slug': 'faqs/licences'}),
+    nav.Item(_('Terms of use'), 'gouvfr.show_page', args={'slug': 'faqs/terms'}),
     nav.Item(_('Tracking and privacy'), 'gouvfr.suivi'),
-    nav.Item(_('Legal notice'), 'gouvfr.show_page', args={'slug': 'legal/legal-notice'}),
+    nav.Item(_('Legal notice'), 'gouvfr.show_page', args={'slug': 'faqs/legal-notice'}),
     nav.Item(_('Accessibility: partially compliant'),
-             'gouvfr.show_page', args={'slug': 'legal/accessibility'}),
+             'gouvfr.show_page', args={'slug': 'faqs/accessibility'}),
 ]
 
 nav.Bar('gouvfr_footer', footer_links)
 
 NETWORK_LINKS = [
-    ('legifrance.gouv.fr', 'https://legifrance.gouv.fr'),
-    ('info.gouv.fr', 'https://www.info.gouv.fr'),
-    ('service-public.fr', 'https://www.service-public.fr'),
+    ('República Portuguesa', 'https://www.portugal.gov.pt/pt/gc23'),
+    ('Compete 2020', 'https://www.compete2020.gov.pt/'),
+    ('Portugal 2020', 'https://portugal2020.pt/'),
+    ('Comissão Europeia', 'https://ec.europa.eu/info/funding-tenders/find-funding/funding-management-mode/2014-2020-european-structural-and-investment-funds_pt'),
 ]
 
 nav.Bar(

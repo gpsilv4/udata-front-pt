@@ -128,24 +128,44 @@ msgid "Organizations"
 msgstr "Organisations"
 
 #: udata_front/theme/gouvfr/__init__.py:49
-msgid "Getting started on data.gouv.fr"
-msgstr "Commencer sur data.gouv.fr"
+msgid "Getting started on dados.gov.pt"
+msgstr "Commencer sur dados.gov.pt"
 
 #: udata_front/theme/gouvfr/__init__.py:51
-msgid "What is data.gouv.fr?"
-msgstr "Qu'est-ce que data.gouv.fr ?"
+msgid "About open data"
+msgstr "À propos des données ouvertes"
 
 #: udata_front/theme/gouvfr/__init__.py:56
-msgid "How to publish data ?"
-msgstr "Comment publier des données ?"
+msgid "About dados.gov"
+msgstr "À propos de dados.gov"
 
 #: udata_front/theme/gouvfr/__init__.py:61
-msgid "How to use data ?"
-msgstr "Comment exploiter des données ?"
+msgid "How to publish data?"
+msgstr "Comment publier les données ?"
 
 #: udata_front/theme/gouvfr/__init__.py:66
-msgid "data.gouv.fr guides"
-msgstr "Guides data.gouv.fr"
+msgid "How to reuse data?"
+msgstr "Comment réutiliser les données ?"
+
+#: udata_front/theme/gouvfr/__init__.py:71
+msgid "Documentation"
+msgstr "Documentation"
+
+#: udata_front/theme/gouvfr/__init__.py:73 udata_front/theme/gouvfr/__init__.py:146
+msgid "Licences"
+msgstr "Licences"
+
+#: udata_front/theme/gouvfr/__init__.py:77 udata_front/theme/gouvfr/__init__.py:147
+msgid "Terms of use"
+msgstr ""
+
+#: udata_front/theme/gouvfr/__init__.py:81
+msgid "Accessibility"
+msgstr ""
+
+#: udata_front/theme/gouvfr/__init__.py:85
+msgid "API Tutorial"
+msgstr ""
 
 #: udata_front/theme/gouvfr/__init__.py:71
 #: udata_front/theme/gouvfr/templates/home.html:61
@@ -703,6 +723,187 @@ msgstr "Administration"
 #, python-format
 msgid "%(site)s administration panel"
 msgstr "Administration de %(site)s"
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:4
+msgid "API Documentation"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:5
+#, python-format
+msgid "%(site)s dynamic API documentation"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:41
+msgid "This page describe this website's free and open RESTful API's behavior"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:45
+msgid "Authentication"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:50
+msgid "In order to be able to execute write operations,"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:52
+#, python-format
+msgid "you first need to obtain an %(apikey)s in your profile settings."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:56
+msgid "API Key"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:59
+msgid "you first need to authenticate and obtain an API Key in your profile settings."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:62
+msgid ""
+"This key should be provided on each call in the <code>X-API-KEY</code> HTTP "
+"header."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:66
+msgid "Authorizations"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:70
+msgid "API calls are subject to the same permissions than the web interface."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:71
+msgid ""
+"By example, you need to be part of the organization to modify one of its "
+"datasets."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:75
+msgid "Pagination"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:79
+msgid ""
+"Some method are paginated and always follow the same pattern.\n"
+"                        The object list is wrapped in a <code>Page</code> "
+"object.\n"
+"                        "
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:83
+msgid ""
+"You don't have to compute yourself the previous and next pages\n"
+"                        because the URLs are available in the response under "
+"the\n"
+"                        <code>previous_page</code> and <code>next_page</code>"
+" attributes.\n"
+"                        They will be set to <code>null</code> if there is no "
+"previous and/or next page."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:88
+msgid "Example"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/api.html:102
+msgid "Reference"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:283
+msgid "Contact"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:284
+msgid ""
+"Use this form to get in touch with us in case of doubts or need of "
+"assistance. You can also contact us to request for additional datasets or "
+"info that you’d like to see available on this portal. To interact with data "
+"suppliers, i.e. ask for more data or specific improvements, use the "
+"\"Contact\" option on each dataset page, to start a new discussion thread."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:294
+#: udata_front/theme/gouvfr/templates/custom/contact.html:295
+msgid "Email"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:298
+#: udata_front/theme/gouvfr/templates/custom/contact.html:299
+msgid "Subject"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:302
+#: udata_front/theme/gouvfr/templates/custom/contact.html:303
+#: udata_front/theme/gouvfr/templates/mail/discussion_closed.html:31
+#: udata_front/theme/gouvfr/templates/mail/new_discussion.html:30
+#: udata_front/theme/gouvfr/templates/mail/new_discussion_comment.html:31
+msgid "Message"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:306
+msgid "required fields"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:318
+#: udata_front/theme/gouvfr/templates/security/send_confirmation.html:14
+msgid "Submit"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/credits.html:16
+msgid "Credits"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/faqs.html:32
+msgid "Edit this page"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:283
+msgid "Contact"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:284
+msgid ""
+"Use this form to get in touch with us in case of doubts or need of "
+"assistance. You can also contact us to request for additional datasets or "
+"info that you’d like to see available on this portal. To interact with data "
+"suppliers, i.e. ask for more data or specific improvements, use the "
+"\"Contact\" option on each dataset page, to start a new discussion thread."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:294
+#: udata_front/theme/gouvfr/templates/custom/contact.html:295
+msgid "Email"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:298
+#: udata_front/theme/gouvfr/templates/custom/contact.html:299
+msgid "Subject"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:302
+#: udata_front/theme/gouvfr/templates/custom/contact.html:303
+#: udata_front/theme/gouvfr/templates/mail/discussion_closed.html:31
+#: udata_front/theme/gouvfr/templates/mail/new_discussion.html:30
+#: udata_front/theme/gouvfr/templates/mail/new_discussion_comment.html:31
+msgid "Message"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:306
+msgid "required fields"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:318
+#: udata_front/theme/gouvfr/templates/security/send_confirmation.html:14
+msgid "Submit"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/credits.html:16
+msgid "Credits"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/faqs.html:32
+msgid "Edit this page"
+msgstr ""
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:10
 msgid "API"
