@@ -22,9 +22,12 @@ services:
     udata:
         build: .
         command: serve --reload
+        environment:
+          - FLASK_DEBUG=true
         volumes:
           - ./udata-fs:/udata/fs
           - .:/src/gouvfr
+          - ./udata.cfg:/udata/udata.cfg
           - ./logs:/logs
         network_mode: "host"
         #ports:
