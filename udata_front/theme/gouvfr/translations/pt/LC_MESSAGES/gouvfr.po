@@ -79,7 +79,7 @@ msgstr "%(start)s à %(end)s"
 
 #: udata_front/frontend/helpers.py:359
 msgid "today"
-msgstr ""
+msgstr "hoje"
 
 #: udata_front/frontend/helpers.py:371
 #, python-format
@@ -128,24 +128,49 @@ msgid "Organizations"
 msgstr "Organizações"
 
 #: udata_front/theme/gouvfr/__init__.py:49
-msgid "Getting started on data.gouv.fr"
-msgstr "Primeiros passos para data.gouv.fr"
+msgid "Getting started on dados.gov.pt"
+msgstr "Primeiros passos para dados.gov.pt"
 
 #: udata_front/theme/gouvfr/__init__.py:51
-msgid "What is data.gouv.fr?"
-msgstr "O que é data.gouv.fr?"
+msgid "About open data"
+msgstr "Sobre dados os abertos"
 
 #: udata_front/theme/gouvfr/__init__.py:56
-msgid "How to publish data ?"
-msgstr "Como publicar dados ?"
+msgid "About dados.gov"
+msgstr "Sobre o dados.gov"
 
 #: udata_front/theme/gouvfr/__init__.py:61
-msgid "How to use data ?"
-msgstr "Como usar os dados ?"
+msgid "How to publish data?"
+msgstr "Como publicar dados ?"
 
 #: udata_front/theme/gouvfr/__init__.py:66
-msgid "data.gouv.fr guides"
+msgid "How to reuse data?"
+msgstr "Como reutilizar os dados ?"
+
+#: udata_front/theme/gouvfr/__init__.py:71
+msgid "Documentation"
+msgstr "Documentação"
+
+#: udata_front/theme/gouvfr/__init__.py:73 udata_front/theme/gouvfr/__init__.py:146
+msgid "Licences"
+msgstr "Licenças"
+
+#: udata_front/theme/gouvfr/__init__.py:77 udata_front/theme/gouvfr/__init__.py:147
+msgid "Terms of use"
+msgstr "Termos de utilização"
+
+#: udata_front/theme/gouvfr/__init__.py:81
+msgid "Accessibility"
+msgstr "Acessibilidade"
+
+#: udata_front/theme/gouvfr/__init__.py:85
+msgid "API Tutorial"
 msgstr ""
+
+#: udata_front/theme/gouvfr/__init__.py:88
+msgid "API Reference"
+msgstr "Referência da API"
+
 
 #: udata_front/theme/gouvfr/__init__.py:71
 #: udata_front/theme/gouvfr/templates/home.html:61
@@ -155,14 +180,14 @@ msgstr "Novidades"
 
 #: udata_front/theme/gouvfr/__init__.py:72 udata_front/theme/gouvfr/__init__.py:103
 msgid "Contact us"
-msgstr "Contacte-nos"
+msgstr "Contate-nos"
 
 #: udata_front/theme/gouvfr/__init__.py:78
 #: udata_front/theme/gouvfr/templates/topic/datasets.html:15
 #: udata_front/theme/gouvfr/templates/topic/display.html:16
 #: udata_front/theme/gouvfr/templates/topic/reuses.html:15
 msgid "Topics"
-msgstr ""
+msgstr "Tópicos"
 
 #: udata_front/theme/gouvfr/__init__.py:91
 msgid "Data catalog"
@@ -170,7 +195,7 @@ msgstr "Catálogo de dados"
 
 #: udata_front/theme/gouvfr/__init__.py:92
 msgid "Follow data opening"
-msgstr ""
+msgstr "Seguir a abertura dos dados"
 
 #: udata_front/theme/gouvfr/__init__.py:94
 msgid "Portal for European data"
@@ -178,19 +203,19 @@ msgstr "Portal de dados europeus"
 
 #: udata_front/theme/gouvfr/__init__.py:101
 msgid "Guides"
-msgstr ""
+msgstr "Guias"
 
 #: udata_front/theme/gouvfr/__init__.py:102
 msgid "Roadmap and news"
-msgstr ""
+msgstr "Roadmap e notícias"
 
 #: udata_front/theme/gouvfr/__init__.py:104
 msgid "Give us your feedback"
-msgstr ""
+msgstr "Dê-nos a sua opinião"
 
 #: udata_front/theme/gouvfr/__init__.py:106
 msgid "Statistics"
-msgstr ""
+msgstr "Estatísticas"
 
 #: udata_front/theme/gouvfr/__init__.py:112
 msgid "api.gouv.fr"
@@ -214,7 +239,7 @@ msgstr "Rastreamento e privacidade"
 
 #: udata_front/theme/gouvfr/__init__.py:126
 msgid "Legal notice"
-msgstr ""
+msgstr "Aviso legal"
 
 #: udata_front/theme/gouvfr/__init__.py:127
 msgid "Accessibility: partially compliant"
@@ -230,7 +255,7 @@ msgstr "Melhores casos de reutilização"
 
 #: udata_front/theme/gouvfr/templates/contact_point.html:2
 msgid "Contact point"
-msgstr ""
+msgstr "Ponto de contacto"
 
 #: udata_front/theme/gouvfr/templates/dataset-apis.html:3
 #: udata_front/theme/gouvfr/templates/dataset/display.html:386
@@ -298,19 +323,19 @@ msgstr "Licença :"
 
 #: udata_front/theme/gouvfr/templates/footer.html:9
 msgid "Open Data"
-msgstr ""
+msgstr "Dados abertos"
 
 #: udata_front/theme/gouvfr/templates/footer.html:19
 msgid "Platform"
-msgstr ""
+msgstr "Plataforma"
 
 #: udata_front/theme/gouvfr/templates/footer.html:29
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #: udata_front/theme/gouvfr/templates/footer.html:39
 msgid "Development"
-msgstr ""
+msgstr "Desenvolvimento
 
 #: udata_front/theme/gouvfr/templates/footer.html:46
 msgid "Portal's API"
@@ -338,7 +363,7 @@ msgstr ""
 
 #: udata_front/theme/gouvfr/templates/footer.html:106
 msgid "Select a Language"
-msgstr ""
+msgstr "Selecionar um idioma"
 
 #: udata_front/theme/gouvfr/templates/footer.html:143
 msgid "Unless otherwise stated, all content of this site is availabe under <a href='{lo_url}'>Open Licence 2.0</a>"
@@ -397,7 +422,7 @@ msgstr "Menu principal"
 
 #: udata_front/theme/gouvfr/templates/header.html:223
 msgid "This is a degraded experience of {site}. Please enable JavaScript and use an up to date browser."
-msgstr ""
+msgstr "Esta é uma experiência degradada de {site}. Active o JavaScript e utilize um browser atualizado."
 
 #: udata_front/theme/gouvfr/templates/api/oauth_error.html:12
 #: udata_front/theme/gouvfr/templates/errors/base.html:15
@@ -537,19 +562,19 @@ msgstr "métricas"
 #: udata_front/theme/gouvfr/templates/newsletter.html:20
 #: udata_front/theme/gouvfr/templates/newsletter.html:27
 msgid "Subscribe to our newsletter"
-msgstr ""
+msgstr "Subscrever a nossa newsletter"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:13
 msgid "To stay up to date about {site} and open data news, subscribe to our newsletter and follow our events."
-msgstr ""
+msgstr "Para se manter atualizado sobre {site} e notícias sobre dados abertos, subscreva a nossa newsletter e siga os nossos eventos."
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:23
 msgid "Subscribe"
-msgstr ""
+msgstr "Subscrever"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:30
 msgid "See our next events"
-msgstr ""
+msgstr "Ver os nossos próximos eventos"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:37
 msgid "Follow us"
@@ -557,7 +582,7 @@ msgstr ""
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:38
 msgid "on social media"
-msgstr ""
+msgstr "nas redes sociais"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:42
 msgid "Twitter - new tab"
@@ -704,6 +729,139 @@ msgstr ""
 msgid "%(site)s administration panel"
 msgstr ""
 
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:4
+msgid "API Documentation"
+msgstr "Documentação da API"
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:5
+#, python-format
+msgid "%(site)s dynamic API documentation"
+msgstr "Documentação da API do dados.gov"
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:41
+msgid "This page describe this website's free and open RESTful API's behavior"
+msgstr "Esta página descreve o comportamento da API do dados.gov."
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:45
+msgid "Authentication"
+msgstr "Autenticação"
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:50
+msgid "In order to be able to execute write operations,"
+msgstr "Para que seja possível executar as operações de escrita,"
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:52
+#, python-format
+msgid "you first need to obtain an %(apikey)s in your profile settings."
+msgstr "precisa de obter primeiro uma %(apikey)s nas configurações do seu perfil."
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:56
+msgid "API Key"
+msgstr "Chave da API"
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:59
+msgid "you first need to authenticate and obtain an API Key in your profile settings."
+msgstr "precisa primeiro de se autenticar/registar e obter uma chave de API nas configurações do seu perfil. "
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:62
+msgid ""
+"This key should be provided on each call in the <code>X-API-KEY</code> HTTP "
+"header."
+msgstr "Esta chave deve ser fornecida em cada chamada à API no cabeçalho HTTP <code>X-API-KEY</code>."
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:66
+msgid "Authorizations"
+msgstr "Autorizações"
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:70
+msgid "API calls are subject to the same permissions than the web interface."
+msgstr "As chamadas à API estão sujeitas às mesmas permissões que a interface web (frontend)."
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:17
+msgid ""
+"By example, you need to be part of the organization to modify one of its "
+"datasets."
+msgstr "Por exemplo, é necessário pertencer a uma organização para modificar os seus conjuntos de dados."
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:75
+msgid "Pagination"
+msgstr "Paginação"
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:79
+msgid ""
+"Some method are paginated and always follow the same pattern.\n"
+"                        The object list is wrapped in a <code>Page</code> "
+"object.\n"
+"                        "
+msgstr "Alguns métodos são paginados e seguem sempre o mesmo padrão. A lista de objetos é encapsulada num objeto Page."
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:83
+msgid ""
+"You don't have to compute yourself the previous and next pages\n"
+"                        because the URLs are available in the response under "
+"the\n"
+"                        <code>previous_page</code> and <code>next_page</code>"
+" attributes.\n"
+"                        They will be set to <code>null</code> if there is no "
+"previous and/or next page."
+msgstr "Não é necessário calcular as páginas anterior e seguinte porque as URLs estão disponíveis na resposta sob os atributos previous_page e next_page. Estes serão definidos como null se não existir nenhuma página anterior ou seguinte."
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:88
+msgid "Example"
+msgstr "Exemplo"
+
+#: udata_front/theme/gouvfr/theme/templates/custom/api.html:102
+msgid "Reference"
+msgstr "Referência"
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:283
+msgid "Contact"
+msgstr "Contato"
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:284
+msgid ""
+"Use this form to get in touch with us in case of doubts or need of "
+"assistance. You can also contact us to request for additional datasets or "
+"info that you’d like to see available on this portal. To interact with data "
+"suppliers, i.e. ask for more data or specific improvements, use the "
+"\"Contact\" option on each dataset page, to start a new discussion thread."
+msgstr "Utilize este formulário para esclarecer dúvidas ou pedir assistência na utilização do dados.gov. Pode também efetuar sugestões sobre conjuntos de dados ou informação que gostaria de ver disponibilizada no portal. Para interagir com as entidades fornecedoras, solicitando mais dados ou melhorias específicas, por exemplo, utilize a funcionalidade de \"contacto\" disponível em cada dataset, para iniciar uma troca de comentários."
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:294
+#: udata_front/theme/gouvfr/templates/custom/contact.html:295
+msgid "Email"
+msgstr "Email"
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:298
+#: udata_front/theme/gouvfr/templates/custom/contact.html:299
+msgid "Subject"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:302
+#: udata_front/theme/gouvfr/templates/custom/contact.html:303
+#: udata_front/theme/gouvfr/templates/mail/discussion_closed.html:31
+#: udata_front/theme/gouvfr/templates/mail/new_discussion.html:30
+#: udata_front/theme/gouvfr/templates/mail/new_discussion_comment.html:31
+msgid "Message"
+msgstr "Mensagem"
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:306
+msgid "required fields"
+msgstr "campos obrigatórios"
+
+#: udata_front/theme/gouvfr/templates/custom/contact.html:318
+#: udata_front/theme/gouvfr/templates/security/send_confirmation.html:14
+msgid "Submit"
+msgstr "Submeter"
+
+#: udata_front/theme/gouvfr/templates/custom/credits.html:16
+msgid "Credits"
+msgstr "Créditos"
+
+#: udata_front/theme/gouvfr/templates/custom/faqs.html:32
+msgid "Edit this page"
+msgstr "Editar esta página"
+
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:10
 msgid "API"
 msgstr ""
@@ -714,7 +872,7 @@ msgstr ""
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:53
 msgid "This API is private and will not be visible by other users"
-msgstr ""
+msgstr "Esta API é privada e não será visível por outros utilizadores"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:53
 #: udata_front/theme/gouvfr/templates/dataset/card-lg.html:13
@@ -728,7 +886,7 @@ msgstr "Privado"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:60
 msgid "This API has been deleted. This will be permanent in the next 24 hours"
-msgstr ""
+msgstr "Esta API foi eliminada. Esta eliminação será permanente nas próximas 24 horas"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:60
 #: udata_front/theme/gouvfr/templates/dataset/display.html:85
@@ -768,43 +926,43 @@ msgstr ""
 #: udata_front/theme/gouvfr/templates/dataset/display.html:588
 #: udata_front/theme/gouvfr/templates/organization/display.html:348
 msgid "Latest update"
-msgstr ""
+msgstr "Última atualização"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:109
 msgid "Rate limiting"
-msgstr ""
+msgstr "Limitação da taxa"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:114
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:122
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:158
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:169
 msgid "Not documented"
-msgstr ""
+msgstr "Não documentado"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:117
 msgid "Availability"
-msgstr ""
+msgstr "Disponibilidade"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:120
 #, python-format
 msgid "%(availability)s last month"
-msgstr ""
+msgstr "%(availability)s no mês passado"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:125
 msgid "Access"
-msgstr ""
+msgstr "Acesso"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:129
 msgid "Restricted"
-msgstr ""
+msgstr "Restrito"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:133
 msgid "Opened"
-msgstr ""
+msgstr "Aberto"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:144
 msgid "Make an authorization request"
-msgstr ""
+msgstr "Efetuar um pedido de autorização"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:149
 msgid "API link"
@@ -812,7 +970,7 @@ msgstr ""
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:160
 msgid "Documentation link"
-msgstr ""
+msgstr "Ligação à documentação"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:183
 #: udata_front/theme/gouvfr/templates/reuse/display.html:173
