@@ -8,7 +8,7 @@
                     <div class="fr-col-12 fr-col-sm-3">
                         <h3 class="fr-footer__top-cat">{{ _('Open Data') }}</h3>
                         <ul class="fr-footer__top-list">
-                            {% for item in nav.gouvpt_opendata %}
+                            {% for item in nav.gouvfr_opendata %}
                             <li>
                                 <a class="fr-footer__top-link" href="{{ item.url }}">{{ item.label }}</a>
                             </li>
@@ -18,7 +18,7 @@
                     <div class="fr-col-12 fr-col-sm-3">
                         <h3 class="fr-footer__top-cat">{{ _('Platform') }}</h3>
                         <ul class="fr-footer__top-list">
-                            {% for item in nav.gouvpt_platform %}
+                            {% for item in nav.gouvfr_platform %}
                             <li>
                                 <a class="fr-footer__top-link" href="{{ item.url }}">{{ item.label }}</a>
                             </li>
@@ -28,7 +28,7 @@
                     <div class="fr-col-12 fr-col-sm-3">
                         <h3 class="fr-footer__top-cat">{{ _('Resources') }}</h3>
                         <ul class="fr-footer__top-list">
-                            {% for item in nav.gouvpt_resources %}
+                            {% for item in nav.gouvfr_resources %}
                             <li>
                                 <a class="fr-footer__top-link" href="{{ item.url }}">{{ item.label }}</a>
                             </li>
