@@ -95,8 +95,6 @@ theme.menu(gouvfr_menu)
 
 opendata_links = [
     nav.Item(_('Topics'), 'gouvfr.show_page', args={'slug': 'temas-em-destaque'}),
-    nav.Item(_('Reference Data'), 'gouvfr.show_page', args={'slug': 'spd/reference'}),
-    nav.Item(_('Portal for European data'), None, url='https://data.europa.eu'),
     nav.Item(_('Data'), 'datasets.list'),
     nav.Item(_('Reuses'), 'reuses.list'),
     nav.Item(_('Organizations'), 'organizations.list'),
@@ -112,8 +110,6 @@ if export_dataset_id:
         export_url = url_for('datasets.show', dataset=export_dataset,
                              _external=True)
         opendata_links.append(nav.Item(_('Data catalog'), None, url=export_url))
-opendata_links.append(nav.Item(_('Follow data opening'), None,
-                      url="https://ouverture.data.gouv.fr"))
 opendata_links.append(nav.Item(_('Portal for European data'), None,
                       url="https://data.europa.eu"))
 
