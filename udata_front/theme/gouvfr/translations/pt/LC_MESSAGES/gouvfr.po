@@ -2546,3 +2546,26 @@ msgstr "Reutilizações mais recentes"
 msgid "Transfer"
 msgstr "Transferir"
 
+msgid "World"
+msgstr "Mundo"
+
+msgid "European Union"
+msgstr "União Europeia"
+
+msgid "Country group"
+msgstr "Mundo"
+
+msgid "Country"
+msgstr "Países"
+
+msgid "District"
+msgstr "Distritos"
+
+msgid "County"
+msgstr "Concelhos"
+
+msgid "Parish"
+msgstr "Freguesias"
+
+msgid "INSEE code:"
+msgstr "Código Dicofre:"

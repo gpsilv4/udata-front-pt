@@ -2594,3 +2594,26 @@ msgstr "Dernières réutilisations"
 msgid "Transfer"
 msgstr "Transférer"
 
+msgid "World"
+msgstr ""
+
+msgid "European Union"
+msgstr ""
+
+msgid "Country group"
+msgstr ""
+
+msgid "Country"
+msgstr ""
+
+msgid "District"
+msgstr ""
+
+msgid "County"
+msgstr ""
+
+msgid "Parish"
+msgstr ""
+
+msgid "INSEE code:"
+msgstr ""
