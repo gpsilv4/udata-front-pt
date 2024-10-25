@@ -52,7 +52,7 @@ setup(
         ],
         'udata.harvesters': [
             'maaf = udata_front.harvesters.maaf:MaafBackend',
-            #'ckanpt = udata_front.harvesters.ckanpt:CkanPTBackend',
+            'ckanpt = udata_front.harvesters.ckanpt:CkanPTBackend',
             'dadosGov = udata_front.harvesters.dadosgov:DGBackend',
             'apambiente = udata_front.harvesters.apambiente:PortalAmbienteBackend',
             'ine = udata_front.harvesters.ine:INEBackend',

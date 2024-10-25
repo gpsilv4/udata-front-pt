@@ -6,11 +6,13 @@ from udata.harvest.backends.base import BaseBackend
 from udata.models import Resource, Dataset, License
 from owslib.csw import CatalogueServiceWeb
 
+from udata.harvest.models import HarvestItem
+
 #backend = 'https://sniambgeoportal.apambiente.pt/geoportal/csw'
 class PortalAmbienteBackend(BaseBackend):
     display_name = 'Harvester Portal do Ambiente'
 
-    def initialize(self):
+    def inner_harvest(self):
         startposition = 0
         csw = CatalogueServiceWeb(self.source.url)
         csw.getrecords2(maxrecords=1)
@@ -27,10 +29,11 @@ class PortalAmbienteBackend(BaseBackend):
                 item["description"] = record.abstract
                 item["url"] = record.references[0].get('url')
                 item["type"] = record.type
-                self.add_item(record.identifier, title=record.title, date=None, item=item)
+                #self.add_item(record.identifier, title=record.title, date=None, item=item)
+                self.process_dataset(record.identifier, title=record.title, date=None, item=item)
 
 
-    def process(self, item):
+    def inner_process_dataset(self, item: HarvestItem, **kwargs):
         dataset = self.get_dataset(item.remote_id)
         # Here you comes your implementation. You should :
         # - fetch the remote dataset (if necessary)
