@@ -12,6 +12,8 @@ from udata.utils import get_by
 
 from urllib.parse import urlparse
 
+from udata.harvest.models import HarvestItem
+
 def guess_format(mimetype, url=None):
     '''
     Guess a file format given a MIME type and/or an url
@@ -97,7 +99,7 @@ class OdsBackendPT(BaseBackend):
     def export_url(self, dataset_id):
         return '{0}?tab=export'.format(self.explore_url(dataset_id))
 
-    def initialize(self):
+    def inner_harvest(self):
         count = 0
         nhits = None
 
@@ -126,9 +128,10 @@ class OdsBackendPT(BaseBackend):
             nhits = data['nhits']
             for dataset in data['datasets']:
                 count += 1
-                self.add_item(dataset['datasetid'], dataset=dataset)
+                #self.add_item(dataset['datasetid'], dataset=dataset)
+                self.process_dataset(dataset['datasetid'], dataset=dataset)
 
-    def process(self, item):
+    def inner_process_dataset(self, item: HarvestItem):
         ods_dataset = item.kwargs['dataset']
         dataset_id = ods_dataset['datasetid']
         ods_metadata = ods_dataset['metas']
