@@ -35,6 +35,8 @@ from udata.harvest.filters import (
 
 from .schemas.ckan import schema as ckan_schema
 
+from udata.harvest.models import HarvestItem
+
 log = logging.getLogger(__name__)
 
 
@@ -115,7 +117,7 @@ class CkanPTBackend(BaseBackend):
         response = self.get(url)
         return response.json()
 
-    def initialize(self):
+    def inner_harvest(self):
 
         try:
             self.harvest_config = json.loads(safe_unicode(self.source.description))
@@ -148,9 +150,10 @@ class CkanPTBackend(BaseBackend):
         if self.max_items:
             names = names[:self.max_items]
         for name in names:
-            self.add_item(name)
+            #self.add_item(name)
+            self.process_dataset(name)
 
-    def process(self, item):
+    def inner_process_dataset(self, item: HarvestItem):
         response = self.get_action('package_show', id=item.remote_id)
         data = self.validate(response['result'], self.schema)
 
@@ -201,8 +204,8 @@ class CkanPTBackend(BaseBackend):
 
         dataset.tags.append(urlparse(self.source.url).hostname)
         
-        dataset.created_at = data['metadata_created']
-        dataset.last_modified = data['metadata_modified']
+        dataset.created_at_internal = data['metadata_created']
+        dataset.last_modified_internal = data['metadata_modified']
 
         dataset.frequency = 'unknown'
         dataset.extras['ckan:name'] = data['name']
@@ -304,7 +307,8 @@ class CkanPTBackend(BaseBackend):
             resource.hash = res.get('hash')
             resource.created = res['created']
             resource.modified = res['last_modified']
-            resource.published = resource.published or resource.created
+            #resource.published = resource.published or resource.created
+            resource.published = resource.created
 
         # Clean up old resources removed from source
         for resource_id in current_resources:

@@ -6,11 +6,12 @@ from datetime import datetime
 from xml.dom import minidom, Node
 import requests
 
+from udata.harvest.models import HarvestItem
 
 class INEBackend(BaseBackend):
     display_name = 'Instituto nacional de estatística'
 
-    def initialize(self):
+    def inner_harvest(self):
         try:
             from ineDatasets import datasetIds
         except :
@@ -26,9 +27,10 @@ class INEBackend(BaseBackend):
             datasetIds.add(currentId)
 
         for dsId in datasetIds:
-            self.add_item(dsId)
+            #self.add_item(dsId)
+            self.process_dataset(dsId)
 
-    def process(self, item):
+    def inner_process_dataset(self, item: HarvestItem):
         '''Return the INE datasets'''
 
         dataset = self.get_dataset(item.remote_id)
