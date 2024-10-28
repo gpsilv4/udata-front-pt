@@ -90,17 +90,17 @@ gouvfr_menu = nav.Bar(
                     args={"slug": "faqs/acessibilidade"},
                 ),
                 nav.Item(
-                    _("API Tutorial"), "gouvfr.show_page", args={"slug": "api-tutorial"}
+                    _("API Tutorial"), "gouvfr.show_page", args={"slug": "faqs/api-tutorial"}
                 ),
                 nav.Item(
                     _("API Reference"),
-                    "gouvfr_faq.docapi",
-                    args={"slug": "api-reference"},
+                    "gouvfr.show_page",
+                    args={"slug": "faqs/api-reference"},
                 ),
             ],
         ),
-        nav.Item(_("News"), "posts.list"),
-        nav.Item(_("Contact us"), "gouvfr_faq.contact"),
+        nav.Item(_("News"), "posts.list", args={"slug": "news"}),
+        nav.Item(_("Contact us"), "gouvfr_faq.contact", args={"slug": "contact"}),
     ],
 )
 
