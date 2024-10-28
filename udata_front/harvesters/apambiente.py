@@ -8,7 +8,9 @@ from owslib.csw import CatalogueServiceWeb
 
 from udata.harvest.models import HarvestItem
 
-#backend = 'https://sniambgeoportal.apambiente.pt/geoportal/csw'
+# backend = 'https://sniambgeoportal.apambiente.pt/geoportal/csw'
+
+
 class PortalAmbienteBackend(BaseBackend):
     display_name = 'Harvester Portal do Ambiente'
 
@@ -29,9 +31,8 @@ class PortalAmbienteBackend(BaseBackend):
                 item["description"] = record.abstract
                 item["url"] = record.references[0].get('url')
                 item["type"] = record.type
-                #self.add_item(record.identifier, title=record.title, date=None, item=item)
-                self.process_dataset(record.identifier, title=record.title, date=None, item=item)
-
+                # self.add_item(record.identifier, title=record.title, date=None, item=item)
+                self.process_dataset(record.identifier, title=record.title, date=None, items=item)
 
     def inner_process_dataset(self, item: HarvestItem, **kwargs):
         dataset = self.get_dataset(item.remote_id)
@@ -41,17 +42,18 @@ class PortalAmbienteBackend(BaseBackend):
         # - map its content to the dataset fields
         # - store extra significant data in the `extra` attribute
         # - map resources data
+        item = kwargs.get('items')
 
-        kwargs = item.kwargs
-        dataset.title = kwargs['title']
+        # Set basic dataset fields
+        dataset.title = item['title']
         dataset.license = License.guess('cc-by')
         dataset.tags = ["apambiente.pt"]
-        item = kwargs['item']
+        dataset.description = item['description']
+
+        if item.get('date'):
+            dataset.created_at = item['date']
 
         dataset.description = item.get('description')
-
-        if kwargs['date']:
-            dataset.created_at = kwargs['date']
 
         # Force recreation of all resources
         dataset.resources = []
@@ -62,15 +64,15 @@ class PortalAmbienteBackend(BaseBackend):
             type = "wms"
         else:
             type = url.split('.')[-1].lower()
-            if len(type)>3:
+            if len(type) > 3:
                 type = "wms"
 
         new_resource = Resource(
-            title = dataset.title,
-            url = url,
-            filetype = 'remote',
-            format = type
+            title=dataset.title,
+            url=url,
+            filetype='remote',
+            format=type
         )
-        dataset.resources.append(new_resource) 
+        dataset.resources.append(new_resource)
 
         return dataset
