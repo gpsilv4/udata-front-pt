@@ -578,7 +578,7 @@ msgstr "Ver os nossos próximos eventos"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:37
 msgid "Follow us"
-msgstr ""
+msgstr "Siga-nos"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:38
 msgid "on social media"
@@ -2160,10 +2160,38 @@ msgstr " por "
 msgid "%(site)s reuse publishing form"
 msgstr ""
 
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:7
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:41
+#: udata_front/theme/gouvfr/templates/participez/participez.html:5
+msgid "Contribute"
+msgstr "Contribuir"
+
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:18
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:53
+#: udata_front/theme/gouvfr/templates/participez/participez.html:22
+msgid "Publish a dataset"
+msgstr "Publicar conjunto de dados"
+
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:78
+msgid "Follow us"
+msgstr "Siga-nos"
+
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:79
+msgid "on social media"
+msgstr "nas redes sociais"
+
+#: udata_front/theme/gouvfr/templates/participez/participez.html:8
+msgid "How to publish data"
+msgstr "Como publicar os dados"
+
+#: udata_front/theme/gouvfr/templates/participez/participez.html:11
+msgid "Go to documentation"
+msgstr "Ir para documentação"
+
 #: udata_front/theme/gouvfr/templates/security/change_email.html:10
 #: udata_front/theme/gouvfr/templates/security/change_email.html:17
 msgid "Change email"
-msgstr ""
+msgstr "Mudar email"
 
 #: udata_front/theme/gouvfr/templates/security/change_email.html:12
 msgid "You want to change your email? Enter the new email below."
