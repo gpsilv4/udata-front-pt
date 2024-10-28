@@ -1,16 +1,19 @@
 from udata.harvest.backends.base import BaseBackend
 from udata.models import Resource, Dataset, License
 import requests
-#from urllib.parse import urlparse
+# from urllib.parse import urlparse
 import urllib.parse as urlparse
 from datetime import datetime
 
+from udata.harvest.models import HarvestItem
 
-#backend = 'https://snig.dgterritorio.gov.pt/rndg/srv/por/q?_content_type=json&fast=index&from=1&resultType=details&sortBy=referenceDateOrd&type=dataset%2Bor%2Bseries&dataPolicy=Dados%20abertos&keyword=DGT'
+# backend = 'https://snig.dgterritorio.gov.pt/rndg/srv/por/q?_content_type=json&fast=index&from=1&resultType=details&sortBy=referenceDateOrd&type=dataset%2Bor%2Bseries&dataPolicy=Dados%20abertos&keyword=DGT'
+
+
 class DGTBackend(BaseBackend):
     display_name = 'Harvester DGT'
 
-    def initialize(self):
+    def inner_harvest(self):
 
         headers = {
             'content-type': 'application/json',
@@ -20,6 +23,7 @@ class DGTBackend(BaseBackend):
         res.encoding = 'utf-8'
         metadata = res.json().get("metadata")
 
+        # Loop through the metadata and process each item
         for each in metadata:
             item = {
                 "remote_id": each.get("geonet:info", {}).get("uuid"),
@@ -28,12 +32,14 @@ class DGTBackend(BaseBackend):
                 "resources": each.get("link"),
                 "keywords": each.get("keyword")
             }
-            #if each.get("publicationDate"):
+            # if each.get("publicationDate"):
             #    item["date"] = datetime.strptime(each.get("publicationDate"),
             #                                     "%Y-%m-%d")
 
             links = []
             resources = item.get("resources")
+
+            # Checks if resources is a list or string and processes accordingly
             if isinstance(resources, list):
                 for url in resources:
                     url_parts = url.split('|')
@@ -53,9 +59,11 @@ class DGTBackend(BaseBackend):
 
             item['resources'] = links
 
-            self.add_item(item["remote_id"], item=item)
+            # self.add_item(item["remote_id"], item=item)
+            self.process_dataset(item["remote_id"], items=item)
 
-    def process(self, item):
+    def inner_process_dataset(self, item: HarvestItem, **kwargs):
+        """Process harvested data into a dataset"""
         dataset = self.get_dataset(item.remote_id)
         # Here you comes your implementation. You should :
         # - fetch the remote dataset (if necessary)
@@ -63,10 +71,9 @@ class DGTBackend(BaseBackend):
         # - map its content to the dataset fields
         # - store extra significant data in the `extra` attribute
         # - map resources data
+        item = kwargs.get('items')
 
-        kwargs = item.kwargs
-        item = kwargs['item']
-
+        # Set basic dataset fields
         dataset.title = item['title']
         dataset.license = License.guess('cc-by')
         dataset.tags = ["snig.dgterritorio.gov.pt"]
@@ -75,9 +82,11 @@ class DGTBackend(BaseBackend):
         if item.get('date'):
             dataset.created_at = item['date']
 
+        # Add keywords as tags
         for keyword in item.get('keywords'):
             dataset.tags.append(keyword)
 
+        # Recreate all resources
         # Force recreation of all resources
         dataset.resources = []
 
@@ -96,6 +105,7 @@ class DGTBackend(BaseBackend):
 
             dataset.resources.append(new_resource)
 
+        # Add extra metadata
         dataset.extras['harvest:name'] = self.source.name
 
         return dataset
