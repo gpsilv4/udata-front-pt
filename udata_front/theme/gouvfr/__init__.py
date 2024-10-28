@@ -143,19 +143,19 @@ platform_links = [
 
 nav.Bar("gouvfr_platform", platform_links)
 
-resources_links = [
-    nav.Item(_("api.gouv.fr"), None, url="https://api.gouv.fr"),
-    nav.Item(
-        _("schema.data.gouv.fr"),
-        None,
-        url=current_app.config.get("SCHEMA_DOCUMENTATION_URL", "#"),
-    ),
-    nav.Item("meteo.data.gouv.fr", None, url="https://meteo.data.gouv.fr"),
-    nav.Item("transport.data.gouv.fr", None, url="https://transport.data.gouv.fr"),
-    nav.Item("defis.data.gouv.fr", None, url="https://defis.data.gouv.fr"),
-]
+# resources_links = [
+#     nav.Item(_("api.gouv.fr"), None, url="https://api.gouv.fr"),
+#     nav.Item(
+#         _("schema.data.gouv.fr"),
+#         None,
+#         url=current_app.config.get("SCHEMA_DOCUMENTATION_URL", "#"),
+#     ),
+#     nav.Item("meteo.data.gouv.fr", None, url="https://meteo.data.gouv.fr"),
+#     nav.Item("transport.data.gouv.fr", None, url="https://transport.data.gouv.fr"),
+#     nav.Item("defis.data.gouv.fr", None, url="https://defis.data.gouv.fr"),
+# ]
 
-nav.Bar("gouvfr_resources", resources_links)
+# nav.Bar("gouvfr_resources", resources_links)
 
 footer_links = [
     nav.Item(_("Licences"), "gouvfr.show_page", args={"slug": "faqs/licences"}),
