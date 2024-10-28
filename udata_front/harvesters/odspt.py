@@ -131,8 +131,8 @@ class OdsBackendPT(BaseBackend):
                 #self.add_item(dataset['datasetid'], dataset=dataset)
                 self.process_dataset(dataset['datasetid'], dataset=dataset)
 
-    def inner_process_dataset(self, item: HarvestItem):
-        ods_dataset = item.kwargs['dataset']
+    def inner_process_dataset(self, item: HarvestItem, **kwargs):
+        ods_dataset = kwargs.get('dataset')
         dataset_id = ods_dataset['datasetid']
         ods_metadata = ods_dataset['metas']
         ods_interopmetas = ods_dataset.get('interop_metas', {})
