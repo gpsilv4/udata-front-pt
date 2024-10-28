@@ -14,7 +14,7 @@ THEME_ROOT = os.path.join(ROOT, 'udata_front/theme', 'gouvfr')
 
 COMPONENTS_ROOT = os.path.join(THEME_ROOT, 'datagouv-components')
 
-LANGUAGES = ['fr']
+LANGUAGES = ['pt']
 
 TO_CLEAN = ['build', 'dist', '**/*.pyc', 'reports']
 

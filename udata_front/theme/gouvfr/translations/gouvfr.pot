@@ -8,8 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: udata-front 5.2.3\n"
 "Report-Msgid-Bugs-To: data.gouv@data.gouv.fr\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2024-10-23 15:22+0100\n"
 "PO-Revision-Date: 2024-10-23 15:22+0100\n"
+=======
+"POT-Creation-Date: 2024-10-18 11:05+0100\n"
+"PO-Revision-Date: 2024-10-18 11:05+0100\n"
+>>>>>>> d1bc694985df307d1f70a6f3b3e4259a6cf72ed6
 "Last-Translator: Data.gouv.fr Team <data.gouv@data.gouv.fr>\n"
 "Language: en\n"
 "Language-Team: Data.gouv.fr Team <data.gouv@data.gouv.fr>\n"
@@ -385,15 +390,24 @@ msgstr ""
 msgid "udata theme extension: udata-front ({version})"
 msgstr ""
 
+<<<<<<< HEAD
 #: udata_front/theme/gouvfr/templates/footer.html:83
 msgid "Go back to website home - data.gouv.fr - République Française"
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/footer.html:89
+=======
+#: udata_front/theme/gouvfr/templates/footer.html:82
+msgid "Go back to website home - data.gouv.fr - République Française"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/footer.html:88
+>>>>>>> d1bc694985df307d1f70a6f3b3e4259a6cf72ed6
 #: udata_front/theme/gouvfr/templates/header.html:55
 msgid "Go back to home page"
 msgstr ""
 
+<<<<<<< HEAD
 #: udata_front/theme/gouvfr/templates/footer.html:96
 msgid "A product of the Direction Interministérielle du Numérique (DINUM)."
 msgstr ""
@@ -403,6 +417,17 @@ msgid "Select a Language"
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/footer.html:150
+=======
+#: udata_front/theme/gouvfr/templates/footer.html:95
+msgid "A product of the Direction Interministérielle du Numérique (DINUM)."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/footer.html:112
+msgid "Select a Language"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/footer.html:149
+>>>>>>> d1bc694985df307d1f70a6f3b3e4259a6cf72ed6
 msgid ""
 "Unless otherwise stated, all content of this site is availabe under <a "
 "href='{lo_url}'>Open Licence 2.0</a>"
@@ -595,6 +620,7 @@ msgstr ""
 msgid "metrics"
 msgstr ""
 
+<<<<<<< HEAD
 #: udata_front/theme/gouvfr/templates/newsletter.html:12
 #: udata_front/theme/gouvfr/templates/newsletter.html:22
 #: udata_front/theme/gouvfr/templates/newsletter.html:29
@@ -602,11 +628,22 @@ msgid "Subscribe to our newsletter"
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:14
+=======
+#: udata_front/theme/gouvfr/templates/newsletter.html:14
+#: udata_front/theme/gouvfr/templates/newsletter.html:24
+#: udata_front/theme/gouvfr/templates/newsletter.html:31
+#: udata_front/theme/gouvfr/templates/participez/participez.html:64
+msgid "Subscribe to our newsletter"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/newsletter.html:16
+>>>>>>> d1bc694985df307d1f70a6f3b3e4259a6cf72ed6
 msgid ""
 "To stay up to date about {site} and open data news,\n"
 "              subscribe to our newsletter and follow our events."
 msgstr ""
 
+<<<<<<< HEAD
 #: udata_front/theme/gouvfr/templates/newsletter.html:25
 msgid "Subscribe"
 msgstr ""
@@ -643,6 +680,17 @@ msgstr ""
 msgid "RSS - new tab"
 msgstr ""
 
+=======
+#: udata_front/theme/gouvfr/templates/newsletter.html:27
+msgid "Subscribe"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/newsletter.html:34
+#: udata_front/theme/gouvfr/templates/participez/participez.html:67
+msgid "See our next events"
+msgstr ""
+
+>>>>>>> d1bc694985df307d1f70a6f3b3e4259a6cf72ed6
 #: udata_front/theme/gouvfr/templates/dataset/display.html:647
 #: udata_front/theme/gouvfr/templates/page.html:52
 #: udata_front/theme/gouvfr/templates/post/display.html:95
@@ -1197,6 +1245,9 @@ msgid "There are no reuses for this dataset yet."
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:429
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:24
+#: udata_front/theme/gouvfr/templates/participez/participez.html:30
+#: udata_front/theme/gouvfr/templates/participez/participez.html:59
 msgid "Publish a reuse"
 msgstr ""
 
@@ -2024,6 +2075,34 @@ msgstr ""
 #: udata_front/theme/gouvfr/templates/organization/publishing-form.html:6
 #, python-format
 msgid "%(site)s organization publishing form"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:5
+#: udata_front/theme/gouvfr/templates/participez/participez.html:5
+#: udata_front/theme/gouvfr/templates/participez/participez.html:41
+msgid "Contribute"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:16
+#: udata_front/theme/gouvfr/templates/participez/participez.html:22
+#: udata_front/theme/gouvfr/templates/participez/participez.html:52
+msgid "Publish a dataset"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participez.html:8
+msgid "How to publish data"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participez.html:11
+msgid "Go to documentation"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participez.html:77
+msgid "Follow us"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participez.html:78
+msgid "on social media"
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/post/display.html:35
