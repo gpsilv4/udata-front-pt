@@ -1403,6 +1403,34 @@ msgstr "Parcours de publication"
 msgid "%(site)s dataset publishing form"
 msgstr "Formulaire de publication d'un jeu de données sur %(site)s"
 
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:7
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:41
+#: udata_front/theme/gouvfr/templates/participez/participez.html:5
+msgid "Contribute"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:18
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:53
+#: udata_front/theme/gouvfr/templates/participez/participez.html:22
+msgid "Publish a dataset"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:78
+msgid "Follow us"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participate-header.html:79
+msgid "on social media"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participez.html:8
+msgid "How to publish data"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/participez/participez.html:11
+msgid "Go to documentation"
+msgstr ""
+
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:19
 msgid "Nameless file"
 msgstr "Fichier sans nom"
