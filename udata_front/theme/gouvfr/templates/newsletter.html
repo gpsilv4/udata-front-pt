@@ -2,15 +2,40 @@
 g.lang_code|default(config.DEFAULT_LANGUAGE)|string %}
 <div class="fr-follow">
   <div class="fr-container">
-    {% include theme("participez/participez.html") %}
-
-    <!-- <div class="fr-grid-row">
-      <div class="fr-col-12 fr-col-md-8 flex">
+    <div class="fr-grid-row">
+      <div class="fr-col-12 fr-col-md-12 flex">
         <div class="fr-col-auto fr-mr-5v">
           {% include theme('svg/illustrations/newspaper.svg') %}
         </div>
-        <div class="fr-follow__newsletter fr-col">
-          <div>
+        <div class="fr-col-8 fr-col-md-8 fr-follow__newsletter fr-col">
+          <!-- Segunda coluna (conteúdo alinhado à esquerda) -->
+          <div class="fr-col-12 fr-col-md-12 fr-text--left">
+            {% if not read_only_mode %}
+            <div>
+              <a
+                href="{{ url_for('admin.index', path='dataset/new/') }}"
+                class="fr-h7 text-white fr-mb-2w fr-icon-arrow-right-s-line fr-link--icon-right"
+              >
+                {{ _('Publish a dataset') }}
+              </a>
+              <br /><!-- Quebra de linha para espaçamento -->
+              <a
+                href="{{ url_for('admin.index', path='reuse/new/') }}"
+                class="fr-h7 text-white fr-mb-2w fr-icon-arrow-right-s-line fr-link--icon-right"
+              >
+                {{ _('Publish a reuse') }}
+              </a>
+              <br /><!-- Quebra de linha para espaçamento -->
+              <a
+                class="fr-h7 text-white fr-mb-2w fr-icon-arrow-right-s-line fr-link--icon-right"
+                title="{{ _('Subscribe to our newsletter') }}"
+                href="{{ url_for('gouvfr.show_page', slug='webinaires') }}"
+              >
+                {{ _("See our next events") }}
+              </a>
+            </div>
+            {% endif %}
+            <!-- <div>
             <p class="fr-h4">{{ _("Subscribe to our newsletter") }}</p>
             <p class="fr-text--lg fr-text--alt f-italic">
               {{ _("To stay up to date about {site} and open data news,
@@ -33,10 +58,48 @@ g.lang_code|default(config.DEFAULT_LANGUAGE)|string %}
             >
               {{ _("See our next events") }}
             </a>
+          </div> -->
+          </div>
+        </div>
+        <div class="fr-col-12 fr-col-md-4" style="justify-content: flex-center">
+          <div class="fr-follow__social">
+            <p class="fr-h5">
+              {{ _("Follow us") }} <br />
+              {{ _("on social media") }}
+            </p>
+            <ul class="fr-links-group">
+              <li>
+                <a
+                  class="fr-link"
+                  href="https://twitter.com/Dadosgov/"
+                  title="Twitter"
+                >
+                  {% include theme('svg/socials/twitter.svg') %}
+                </a>
+              </li>
+              <li>
+                <a
+                  class="fr-link"
+                  href="https://www.linkedin.com/company/ama-gov-pt/"
+                  title="Linkedin"
+                >
+                  {% include theme('svg/socials/linkedin.svg') %}
+                </a>
+              </li>
+              <li>
+                <a
+                  class="fr-link"
+                  href="https://github.com/amagovpt/"
+                  title="Github"
+                >
+                  {% include theme('svg/socials/github.svg') %}
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
+  {% endcache %}
 </div>
-{% endcache %}
