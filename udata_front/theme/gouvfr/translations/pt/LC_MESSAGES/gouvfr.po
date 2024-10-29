@@ -335,7 +335,7 @@ msgstr "Recursos"
 
 #: udata_front/theme/gouvfr/templates/footer.html:39
 msgid "Development"
-msgstr "Desenvolvimento
+msgstr "Desenvolvimento"
 
 #: udata_front/theme/gouvfr/templates/footer.html:46
 msgid "Portal's API"
@@ -512,8 +512,8 @@ msgstr "é"
 msgid "Featured datasets"
 msgstr "Conjuntos de dados em destaque"
 
-#: udata_front/theme/gouvfr/templates/home.html:116
 #: udata_front/theme/gouvfr/templates/topic/display.html:52
+#: udata_front/theme/gouvfr/templates/home.html:116
 msgid "Latest datasets"
 msgstr "Últimos conjuntos de dados"
 
@@ -575,10 +575,6 @@ msgstr "Subscrever"
 #: udata_front/theme/gouvfr/templates/newsletter.html:30
 msgid "See our next events"
 msgstr "Ver os nossos próximos eventos"
-
-#: udata_front/theme/gouvfr/templates/newsletter.html:37
-msgid "Follow us"
-msgstr "Siga-nos"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:38
 msgid "on social media"
@@ -1915,7 +1911,7 @@ msgstr "Esta organização foi abolida. Isto será finalizado nas próximas 24 h
 #: udata_front/theme/gouvfr/templates/organization/display.html:104
 #: udata_front/theme/gouvfr/templates/organization/display.html:156
 msgid "Presentation"
-msgstr ""
+msgstr "Apresentação"
 
 #: udata_front/theme/gouvfr/templates/organization/display.html:254
 msgid "This organization hasn't published any datasets yet."
@@ -2172,6 +2168,7 @@ msgstr "Contribuir"
 msgid "Publish a dataset"
 msgstr "Publicar conjunto de dados"
 
+#: udata_front/theme/gouvfr/templates/newsletter.html:37
 #: udata_front/theme/gouvfr/templates/participez/participate-header.html:78
 msgid "Follow us"
 msgstr "Siga-nos"
