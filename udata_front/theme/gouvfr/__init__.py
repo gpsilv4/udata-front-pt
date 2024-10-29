@@ -90,12 +90,12 @@ gouvfr_menu = nav.Bar(
                     args={"slug": "faqs/acessibilidade"},
                 ),
                 nav.Item(
-                    _("API Tutorial"), "gouvfr.show_page", args={"slug": "faqs/api-tutorial"}
+                    _("API Tutorial"), "gouvfr.show_page", args={"slug": "api-tutorial"}
                 ),
                 nav.Item(
                     _("API Reference"),
-                    "gouvfr.show_page",
-                    args={"slug": "faqs/api-reference"},
+                    "gouvfr_faq.docapi",
+                    args={"slug": "api-reference"},
                 ),
             ],
         ),
