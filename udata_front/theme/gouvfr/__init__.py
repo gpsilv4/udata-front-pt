@@ -131,13 +131,14 @@ nav.Bar("gouvfr_opendata", opendata_links)
 
 platform_links = [
     nav.Item(_("Guides"), None, url=current_app.config.get("GUIDES_URL", "#")),
+    nav.Item(_("API Tutorial"), "gouvfr.show_page", args={"slug": "api-tutorial"}),
     nav.Item(_("Roadmap and news"), "gouvfr.show_page", args={"slug": "roadmap"}),
-    nav.Item(_("Contact us"), None, url="https://support.data.gouv.fr"),
-    nav.Item(
-        _("Give us your feedback"),
-        None,
-        url=current_app.config.get("FEEDBACK_FORM_URL", "#"),
-    ),
+    nav.Item(_("Contact us"), "gouvfr_faq.contact", args={"slug": "contact"}),
+    # nav.Item(
+    #     _("Give us your feedback"),
+    #     None,
+    #     url=current_app.config.get("FEEDBACK_FORM_URL", "#"),
+    # ),
     nav.Item(_("Statistics"), "site.dashboard"),
 ]
 

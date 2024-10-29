@@ -40,7 +40,7 @@
                          <ul class="fr-footer__top-list">
                             <li>
                                 <a
-                                    href="{{config.API_DOC_EXTERNAL_LINK}}"
+                                    href="https://dados.gov.pt/pt/docapi/"
                                     class="fr-footer__top-link"
                                 >
                                    {{  _("Portal's API") }}
@@ -75,12 +75,11 @@
         {% endcache %}
         <div class="fr-container">
             <div class="fr-footer__body">
-               <!-- XXXX -->
             {% cache cache_duration, 'footer-brand-and-links', g.lang_code|default(config.DEFAULT_LANGUAGE)|string %}
             
             <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
                 <div class="fr-footer__brand fr-enlarge-link" style="display: flex; align-items: center; top: 50%;">
-                    <a class="fr-footer__brand-link" href="/" style="width: 130px;" title="{{_('Go back to website home - data.gouv.fr - République Française')}}">
+                    <a class="fr-footer__brand-link" href="https://www.ama.gov.pt/" style="width: 130px;">
                         {% include theme('svg/logo-ama.svg') %}
                     </a>
                 </div>
@@ -93,7 +92,7 @@
             </div>
             
                 <div class="fr-footer__content">
-                    <p class="fr-footer__content-desc">{{ _("A product of the Direction Interministérielle du Numérique (DINUM).") }}</p>
+                    <!-- <p class="fr-footer__content-desc">{{ _("A product of the Direction Interministérielle du Numérique (DINUM).") }}</p> -->
                     <ul class="fr-footer__content-list">
                         {% for item in nav.gouvfr_network %}
                         <li class="fr-footer__content-item">
