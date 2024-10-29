@@ -158,15 +158,18 @@ nav.Bar("gouvfr_platform", platform_links)
 # nav.Bar("gouvfr_resources", resources_links)
 
 footer_links = [
-    nav.Item(_("Licences"), "gouvfr.show_page", args={"slug": "faqs/licences"}),
+    nav.Item(_("Licences"), "gouvfr.show_page", args={"slug": "faqs/licenses/"}),
     nav.Item(_("Terms of use"), "gouvfr.show_page", args={"slug": "faqs/terms"}),
     nav.Item(_("Tracking and privacy"), "gouvfr.suivi"),
-    nav.Item(_("Legal notice"), "gouvfr.show_page", args={"slug": "faqs/legal-notice"}),
-    nav.Item(
-        _("Accessibility: partially compliant"),
-        "gouvfr.show_page",
-        args={"slug": "faqs/accessibility"},
-    ),
+    # nav.Item(_("Legal notice"), "gouvfr.show_page", args={"slug": "faqs/legal-notice"}),
+    nav.Item(_('Acessibilidade'),
+             'gouvfr.show_page', args={'slug': 'faqs/acessibilidade'}),
+
+    # nav.Item(
+    #     _("Accessibility: partially compliant"),
+    #     "gouvfr.show_page",
+    #     args={"slug": "faqs/accessibility"},
+    # ),
 ]
 
 nav.Bar("gouvfr_footer", footer_links)
