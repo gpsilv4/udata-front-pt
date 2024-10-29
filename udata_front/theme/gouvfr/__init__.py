@@ -95,7 +95,7 @@ gouvfr_menu = nav.Bar(
                 nav.Item(
                     _("API Reference"),
                     "gouvfr_faq.docapi",
-                    args={"slug": "api-reference"},
+                    args={"slug": "api-documentation"},
                 ),
             ],
         ),
