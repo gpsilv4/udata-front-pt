@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: udata-front 5.2.3\n"
 "Report-Msgid-Bugs-To: data.gouv@data.gouv.fr\n"
-"POT-Creation-Date: 2024-10-30 15:51+0000\n"
-"PO-Revision-Date: 2024-10-30 15:51+0000\n"
+"POT-Creation-Date: 2024-10-30 17:18+0000\n"
+"PO-Revision-Date: 2024-10-30 17:18+0000\n"
 "Last-Translator: Data.gouv.fr Team <data.gouv@data.gouv.fr>\n"
 "Language: en\n"
 "Language-Team: Data.gouv.fr Team <data.gouv@data.gouv.fr>\n"
@@ -421,8 +421,10 @@ msgid "Log in"
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/header.html:122
-#: udata_front/theme/gouvfr/templates/security/register_user.html:11
-#: udata_front/theme/gouvfr/templates/security/register_user.html:62
+#: udata_front/theme/gouvfr/templates/security/register_saml.html:29
+#: udata_front/theme/gouvfr/templates/security/register_user.html:12
+#: udata_front/theme/gouvfr/templates/security/register_user.html:63
+#: udata_front/theme/gouvfr/templates/security/register_user.html:69
 msgid "Sign up"
 msgstr ""
 
@@ -1488,7 +1490,7 @@ msgid "The identity of this organization is certified by %(certifier)s"
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/macros/forms.html:23
-msgid "Expected format : name@domain.fr"
+msgid "Expected format : name@domain.pt"
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/macros/integrate.html:16
@@ -1675,8 +1677,10 @@ msgid "Drag a file here"
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/macros/uploader.html:11
-#: udata_front/theme/gouvfr/templates/security/login_user.html:46
-#: udata_front/theme/gouvfr/templates/security/register_user.html:68
+#: udata_front/theme/gouvfr/templates/security/login_user.html:45
+#: udata_front/theme/gouvfr/templates/security/login_user.html:59
+#: udata_front/theme/gouvfr/templates/security/register_user.html:72
+#: udata_front/theme/gouvfr/templates/security/register_user.html:89
 msgid "or"
 msgstr ""
 
@@ -2211,7 +2215,8 @@ msgstr ""
 #: udata_front/theme/gouvfr/templates/security/change_password.html:15
 #: udata_front/theme/gouvfr/templates/security/forgot_password.html:16
 #: udata_front/theme/gouvfr/templates/security/login_user.html:14
-#: udata_front/theme/gouvfr/templates/security/register_user.html:23
+#: udata_front/theme/gouvfr/templates/security/register_saml.html:14
+#: udata_front/theme/gouvfr/templates/security/register_user.html:24
 #: udata_front/theme/gouvfr/templates/security/reset_password.html:13
 #: udata_front/theme/gouvfr/templates/security/send_confirmation.html:12
 msgid ""
@@ -2248,7 +2253,7 @@ msgid "Javascript is required to use this page correctly."
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/security/forgot_password.html:29
-#: udata_front/theme/gouvfr/templates/security/register_user.html:48
+#: udata_front/theme/gouvfr/templates/security/register_user.html:49
 msgid "Retype the characters from the picture"
 msgstr ""
 
@@ -2268,41 +2273,46 @@ msgstr ""
 msgid "Send the instructions again"
 msgstr ""
 
-#: udata_front/theme/gouvfr/templates/security/login_user.html:50
-#: udata_front/theme/gouvfr/templates/security/register_user.html:72
-msgid "Log in with"
+#: udata_front/theme/gouvfr/templates/security/login_user.html:47
+#: udata_front/theme/gouvfr/templates/security/login_user.html:61
+msgid "Login"
 msgstr ""
 
-#: udata_front/theme/gouvfr/templates/security/login_user.html:54
-#: udata_front/theme/gouvfr/templates/security/register_user.html:76
-msgid "What is ProConnect ?"
-msgstr ""
-
-#: udata_front/theme/gouvfr/templates/security/login_user.html:65
+#: udata_front/theme/gouvfr/templates/security/login_user.html:79
 msgid "Don't have an account?"
 msgstr ""
 
-#: udata_front/theme/gouvfr/templates/security/login_user.html:71
+#: udata_front/theme/gouvfr/templates/security/login_user.html:85
 msgid "Create an account"
 msgstr ""
 
-#: udata_front/theme/gouvfr/templates/security/register_user.html:17
-msgid "Why create an account? - opens a new window"
+#: udata_front/theme/gouvfr/templates/security/register_saml.html:12
+msgid "Sign Up"
 msgstr ""
 
-#: udata_front/theme/gouvfr/templates/security/register_user.html:19
-msgid "Why create an account?"
-msgstr ""
-
-#: udata_front/theme/gouvfr/templates/security/register_user.html:29
-msgid "Javascript is required to sign up."
-msgstr ""
-
-#: udata_front/theme/gouvfr/templates/security/register_user.html:41
+#: udata_front/theme/gouvfr/templates/security/register_saml.html:23
+#: udata_front/theme/gouvfr/templates/security/register_user.html:42
 #, python-format
 msgid ""
 "I have read and accept <a href=\"%(url)s\"> the terms and conditions of the "
 "service.</a>"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/security/register_user.html:18
+msgid "Why create an account? - opens a new window"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/security/register_user.html:20
+msgid "Why create an account?"
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/security/register_user.html:30
+msgid "Javascript is required to sign up."
+msgstr ""
+
+#: udata_front/theme/gouvfr/templates/security/register_user.html:75
+#: udata_front/theme/gouvfr/templates/security/register_user.html:91
+msgid "Register"
 msgstr ""
 
 #: udata_front/theme/gouvfr/templates/security/send_confirmation.html:10

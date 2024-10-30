@@ -84,7 +84,7 @@ msgstr "hoje"
 #: udata_front/frontend/helpers.py:371
 #, python-format
 msgid "on %(date)s"
-msgstr ""
+msgstr "em %(date)s"
 
 #: udata_front/frontend/resource_helpers.py:23
 msgid "B"
@@ -319,7 +319,7 @@ msgstr "Frequência"
 
 #: udata_front/theme/gouvfr/templates/embed-dataset.html:237
 msgid "License:"
-msgstr "Licença :"
+msgstr "Licença:"
 
 #: udata_front/theme/gouvfr/templates/footer.html:9
 msgid "Open Data"
@@ -359,7 +359,7 @@ msgstr ""
 
 #: udata_front/theme/gouvfr/templates/footer.html:89
 msgid "A product of the Direction Interministérielle du Numérique (DINUM)."
-msgstr ""
+msgstr "Um produto da Direção Interministerial dos Números (DINUM)."
 
 #: udata_front/theme/gouvfr/templates/footer.html:106
 msgid "Select a Language"
@@ -408,7 +408,7 @@ msgstr "Sair"
 #: udata_front/theme/gouvfr/templates/security/login_user.html:27
 #: udata_front/theme/gouvfr/templates/territories/territory.html:28
 msgid "Log in"
-msgstr "Conecte-se"
+msgstr "Iniciar Sessão"
 
 #: udata_front/theme/gouvfr/templates/header.html:124
 #: udata_front/theme/gouvfr/templates/security/register_user.html:11
@@ -582,23 +582,23 @@ msgstr "nas redes sociais"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:42
 msgid "Twitter - new tab"
-msgstr ""
+msgstr "Twitter - novo separador"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:47
 msgid "Linkedin - new tab"
-msgstr ""
+msgstr "Linkedin - novo separador"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:52
 msgid "Mastodon - new tab"
-msgstr ""
+msgstr "Mastodon - novo separador"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:57
 msgid "Github - new tab"
-msgstr ""
+msgstr "Github - novo separador"
 
 #: udata_front/theme/gouvfr/templates/newsletter.html:62
 msgid "RSS - new tab"
-msgstr ""
+msgstr "RSS - novo separador"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:647
 #: udata_front/theme/gouvfr/templates/page.html:52
@@ -682,7 +682,7 @@ msgstr "Aceda ao seu perfil"
 
 #: udata_front/theme/gouvfr/templates/api/oauth_authorize.html:41
 msgid "Read your profile, your email address, the organization you belong to, your publications"
-msgstr ""
+msgstr "Leia o seu perfil, o seu endereço eletrónico, a organização a que pertence, as suas publicações"
 
 #: udata_front/theme/gouvfr/templates/api/oauth_authorize.html:42
 msgid "Publish data"
@@ -706,11 +706,11 @@ msgstr "Erro de autenticação OAuth"
 
 #: udata_front/theme/gouvfr/templates/banners/feedback.html:7
 msgid "Did you find what you were looking for?"
-msgstr ""
+msgstr "Did you find what you were looking for?"
 
 #: udata_front/theme/gouvfr/templates/banners/feedback.html:10
 msgid "Don't show this message again"
-msgstr ""
+msgstr "Don't show this message again"
 
 #: udata_front/theme/gouvfr/templates/banners/read-only.html:4
 msgid "Due to security reasons, the creation of new content is currently disabled."
@@ -718,12 +718,12 @@ msgstr "Por razões de segurança, a criação de novos conteúdos está actualm
 
 #: udata_front/theme/gouvfr/templates/beta/admin.html:4
 msgid "Administration panel"
-msgstr ""
+msgstr "Painel de administração"
 
 #: udata_front/theme/gouvfr/templates/beta/admin.html:5
 #, python-format
 msgid "%(site)s administration panel"
-msgstr ""
+msgstr "Painel de administração do %(site)s"
 
 #: udata_front/theme/gouvfr/theme/templates/custom/api.html:4
 msgid "API Documentation"
@@ -732,11 +732,11 @@ msgstr "Documentação da API"
 #: udata_front/theme/gouvfr/theme/templates/custom/api.html:5
 #, python-format
 msgid "%(site)s dynamic API documentation"
-msgstr "Documentação da API do dados.gov"
+msgstr "Documentação da API dinâmica do %(site)s"
 
 #: udata_front/theme/gouvfr/theme/templates/custom/api.html:41
 msgid "This page describe this website's free and open RESTful API's behavior"
-msgstr "Esta página descreve o comportamento da API do dados.gov."
+msgstr "Esta página descreve o comportamento da API RESTful gratuita e aberta deste sítio Web"
 
 #: udata_front/theme/gouvfr/theme/templates/custom/api.html:45
 msgid "Authentication"
@@ -826,12 +826,12 @@ msgstr "Utilize este formulário para esclarecer dúvidas ou pedir assistência 
 #: udata_front/theme/gouvfr/templates/custom/contact.html:294
 #: udata_front/theme/gouvfr/templates/custom/contact.html:295
 msgid "Email"
-msgstr "Email"
+msgstr "E-mail"
 
 #: udata_front/theme/gouvfr/templates/custom/contact.html:298
 #: udata_front/theme/gouvfr/templates/custom/contact.html:299
 msgid "Subject"
-msgstr ""
+msgstr "Assunto"
 
 #: udata_front/theme/gouvfr/templates/custom/contact.html:302
 #: udata_front/theme/gouvfr/templates/custom/contact.html:303
@@ -962,7 +962,7 @@ msgstr "Efetuar um pedido de autorização"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:149
 msgid "API link"
-msgstr ""
+msgstr "Ligação API"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:160
 msgid "Documentation link"
@@ -979,22 +979,22 @@ msgstr[1] "conjuntos de dados usados"
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:193
 #, python-format
 msgid "No datasets on %(site)s are linked to this API."
-msgstr ""
+msgstr "Nenhum conjunto de dados sobre %(site)s está ligado a esta API."
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:208
 msgid "There are no discussions for this API yet."
-msgstr ""
+msgstr "Ainda não há discussões para esta API."
 
 #: udata_front/theme/gouvfr/templates/dataservice/list.html:6
 #: udata_front/theme/gouvfr/templates/dataservice/list.html:12
 #: udata_front/theme/gouvfr/templates/dataservice/list.html:24
 msgid "Dataservices"
-msgstr ""
+msgstr "Serviços de dados"
 
 #: udata_front/theme/gouvfr/templates/dataservice/list.html:13
 #, python-format
 msgid "%(site)s dataservices search"
-msgstr ""
+msgstr "%(site)s pesquisa de serviços de dados"
 
 #: udata_front/theme/gouvfr/templates/dataservice/list.html:14
 #: udata_front/theme/gouvfr/templates/dataset/list.html:16
@@ -1004,20 +1004,20 @@ msgstr ""
 #: udata_front/theme/gouvfr/templates/topic/reuses.html:8
 #: udata_front/theme/gouvfr/templates/user/list.html:7
 msgid "search"
-msgstr "Pesquisa"
+msgstr "pesquisa"
 
 #: udata_front/theme/gouvfr/templates/dataservice/list.html:14
 msgid "dataservices"
-msgstr ""
+msgstr "serviços de dados"
 
 #: udata_front/theme/gouvfr/templates/dataservice/list.html:26
 #, python-format
 msgid "Search among %(count)s dataservices on %(site)s"
-msgstr ""
+msgstr "Pesquisa entre %(count)s serviços de dados em %(site)s"
 
 #: udata_front/theme/gouvfr/templates/dataservice/list.html:32
 msgid "Search datasets"
-msgstr ""
+msgstr "Pesquisar conjuntos de dados"
 
 #: udata_front/theme/gouvfr/templates/dataset/card-lg.html:63
 #: udata_front/theme/gouvfr/templates/dataset/card-sm.html:59
@@ -1029,7 +1029,7 @@ msgstr "A partir de "
 #: udata_front/theme/gouvfr/templates/dataset/card-sm.html:77
 #, python-format
 msgid "Updated %(date)s"
-msgstr ""
+msgstr "Atualizado %(date)s"
 
 #: udata_front/theme/gouvfr/templates/dataset/card-lg.html:103
 #: udata_front/theme/gouvfr/templates/organization/card.html:30
@@ -1074,11 +1074,11 @@ msgstr "Este conjunto de dados foi arquivado."
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:130
 msgid "This dataset has been published on the initiative and under the responsibility of {author}."
-msgstr ""
+msgstr "Este conjunto de dados foi publicado por iniciativa e sob a responsabilidade de {author}."
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:142
 msgid "This dataset come from an external portal.&nbsp;<a href='{external_source}' rel='ugc nofollow noopener'>View the original source.</a>"
-msgstr ""
+msgstr "Este conjunto de dados provém de um portal externo.&nbsp;<a href='{external_source}' rel='ugc nofollow noopener'>Ver a fonte original.</a>"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:150
 msgid "This dataset is handled by the <a href='{geo_link}'>geo.data.gouv.fr</a> platform.\n"
@@ -1096,11 +1096,11 @@ msgstr "Licença"
 #: udata_front/theme/gouvfr/templates/organization/display.html:93
 #: udata_front/theme/gouvfr/templates/organization/display.html:149
 msgid "In-page navigation"
-msgstr ""
+msgstr "Navegação na página"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:211
 msgid "Reuses and API"
-msgstr ""
+msgstr "Reutilizações e API"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:240
 #: udata_front/theme/gouvfr/templates/dataset/display.html:296
@@ -1118,15 +1118,15 @@ msgstr "Informação"
 #: udata_front/theme/gouvfr/templates/dataset/display.html:350
 #, python-format
 msgid "See the %(type)s"
-msgstr ""
+msgstr "Ver os %(type)s"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:358
 msgid "There are no files for this dataset yet."
-msgstr ""
+msgstr "Ainda não existem ficheiros para este conjunto de dados."
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:366
 msgid "Add a file"
-msgstr ""
+msgstr "Adicionar um ficheiro"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:400
 #, python-format
@@ -1169,20 +1169,20 @@ msgstr[1] ""
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:506
 msgid "There are no community resources for this dataset yet."
-msgstr ""
+msgstr "Ainda não existem recursos comunitários para este conjunto de dados."
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:513
 msgid "Share your resources"
-msgstr ""
+msgstr "Partilhe os seus recursos"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:519
 msgid "Learn more about the community"
-msgstr ""
+msgstr "Saiba mais sobre a comunidade"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:535
 #: udata_front/theme/gouvfr/templates/reuse/display.html:150
 msgid "Tags"
-msgstr ""
+msgstr "Etiquetas"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:561
 #: udata_front/theme/gouvfr/templates/organization/display.html:351
@@ -1199,11 +1199,11 @@ msgstr "Temporalidade"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:573
 msgid "Creation"
-msgstr ""
+msgstr "Criação"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:594
 msgid "Spatial coverage"
-msgstr ""
+msgstr "Cobertura espacial"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:597
 #: udata_front/theme/gouvfr/templates/dataset/display.html:604
@@ -1216,22 +1216,24 @@ msgstr "Granularidade da cobertura territorial"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:618
 msgid "Data schema"
-msgstr ""
+msgstr "Esquema de dados"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:623
 msgid "The dataset files are following the schema: "
-msgstr ""
+msgstr "Os ficheiros do conjunto de dados seguem o esquema: "
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:629
 msgid "Schemas allow to describe data models,\n"
 "                                discover how schemas improve your data quality and the available use cases\n"
 "                                on <a href=\"{url}\">schema.data.gouv.fr</a>"
-msgstr ""
+msgstr "Os esquemas permitem descrever modelos de dados,\n"
+"                                descobrir como os esquemas melhoram a qualidade dos seus dados e os casos de utilização disponíveis\n"
+"                                no <a href=\"{url}\">schema.data.gouv.pt</a>"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:640
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:132
 msgid "See schema documentation"
-msgstr ""
+msgstr "Ver documentação do esquema"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:653
 msgid "Extras"
@@ -1239,7 +1241,7 @@ msgstr "Extras"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:662
 msgid "See extras"
-msgstr ""
+msgstr "Ver extras"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:681
 msgid "Harvest"
@@ -1247,7 +1249,7 @@ msgstr ""
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:690
 msgid "See harvest extras"
-msgstr ""
+msgstr "Ver extras de harvest"
 
 #: udata_front/theme/gouvfr/templates/dataset/followers.html:16
 #: udata_front/theme/gouvfr/templates/organization/display.html:27
@@ -1285,15 +1287,15 @@ msgstr "Data de criação"
 #: udata_front/theme/gouvfr/templates/dataset/list.html:24
 #: udata_front/theme/gouvfr/templates/reuse/display.html:163
 msgid "Last update"
-msgstr ""
+msgstr "Última atualização"
 
 #: udata_front/theme/gouvfr/templates/dataset/list.html:25
 msgid "Number of followers"
-msgstr ""
+msgstr "Número de seguidores"
 
 #: udata_front/theme/gouvfr/templates/dataset/list.html:26
 msgid "Number of reuses"
-msgstr ""
+msgstr "Número de reutilizações"
 
 #: udata_front/theme/gouvfr/templates/dataset/list.html:35
 #, python-format
@@ -1344,20 +1346,20 @@ msgstr "%(result)s resultados"
 #: udata_front/theme/gouvfr/templates/reuse/publishing-form.html:5
 #: udata_front/theme/gouvfr/templates/reuse/publishing-form.html:21
 msgid "Publishing Form"
-msgstr ""
+msgstr "Formulário de publicação"
 
 #: udata_front/theme/gouvfr/templates/dataset/publishing-form.html:6
 #, python-format
 msgid "%(site)s dataset publishing form"
-msgstr ""
+msgstr "Formulário de publicação do conjunto de dados de %(site)s"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:19
 msgid "Nameless file"
-msgstr ""
+msgstr "Ficheiro sem nome"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:25
 msgid "schema:"
-msgstr ""
+msgstr "esquema:"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:29
 #, python-format
@@ -1374,11 +1376,11 @@ msgstr "Indisponível"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:51
 msgid "File link - opens a new window"
-msgstr ""
+msgstr "Ligação ao ficheiro - abre uma nova janela"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:62
 msgid "Download file"
-msgstr ""
+msgstr "Download ficheiro"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:78
 msgid "URL"
@@ -1398,19 +1400,19 @@ msgstr "Criado em"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:102
 msgid "Modified on"
-msgstr "Modificado em "
+msgstr "Modificado em"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:109
 msgid "Size"
-msgstr ""
+msgstr "Tamanho"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:122
 msgid "Schema"
-msgstr ""
+msgstr "Esquema"
 
 #: udata_front/theme/gouvfr/templates/errors/400.html:3
 msgid "Bad request"
-msgstr "Pedido errado"
+msgstr "Pedido incorreto"
 
 #: udata_front/theme/gouvfr/templates/errors/400.html:8
 #: udata_front/theme/gouvfr/templates/errors/500.html:8
@@ -1467,7 +1469,7 @@ msgstr "A identidade desta organização é certificada por %(certifier)s"
 
 #: udata_front/theme/gouvfr/templates/macros/forms.html:23
 msgid "Expected format : name@domain.pt"
-msgstr "nome@dominio.pt"
+msgstr "Formato previsto : nome@dominio.pt"
 
 #: udata_front/theme/gouvfr/templates/macros/integrate.html:16
 msgid "Copy this"
@@ -1505,13 +1507,13 @@ msgstr "Próxima página"
 
 #: udata_front/theme/gouvfr/templates/macros/paginator.html:109
 msgid "Last page"
-msgstr "última página"
+msgstr "Última página"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_inline.html:7
 #: udata_front/theme/gouvfr/templates/macros/quality_score_inline.html:10
 #: udata_front/theme/gouvfr/templates/macros/quality_score_toggletip.html:10
 msgid "Metadata quality:"
-msgstr "Qualidade dos metadados :"
+msgstr "Qualidade dos metadados:"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_toggletip.html:13
 msgid "Data description filled"
@@ -1609,7 +1611,7 @@ msgstr "A qualidade dos metadados pode ser enganadora, uma vez que as informaç�
 
 #: udata_front/theme/gouvfr/templates/macros/search.html:17
 msgid "Sort by"
-msgstr "ordenar por"
+msgstr "Ordenar por"
 
 #: udata_front/theme/gouvfr/templates/macros/search.html:21
 #: udata_front/theme/gouvfr/templates/macros/sort_search.html:19
@@ -1644,7 +1646,7 @@ msgstr "Não foram encontrados resultados"
 
 #: udata_front/theme/gouvfr/templates/macros/sort_search.html:9
 msgid "Sort by:"
-msgstr "ordenar por:"
+msgstr "Ordenar por:"
 
 #: udata_front/theme/gouvfr/templates/macros/uploader.html:8
 msgid "Drag a file here"
@@ -1844,7 +1846,7 @@ msgstr "Pode iniciar sessão na sua conta através do link abaixo :"
 
 #: udata_front/theme/gouvfr/templates/mail/security/login_instructions.html:13
 msgid "Login now"
-msgstr "Ligue agora"
+msgstr "Iniciar sessão agora"
 
 #: udata_front/theme/gouvfr/templates/mail/security/reset_instructions.html:7
 #, python-format
@@ -1867,7 +1869,7 @@ msgstr "A sua palavra-passe para %(site)s foi redefinida."
 #: udata_front/theme/gouvfr/templates/mail/security/welcome.html:7
 #, python-format
 msgid "Welcome to %(site)s!"
-msgstr " Bem-Vindo ao %(site)s !"
+msgstr " Bem-Vindo ao %(site)s!"
 
 #: udata_front/theme/gouvfr/templates/mail/security/welcome.html:10
 msgid "To activate your account, please confirm your email address through the link below:"
@@ -1892,13 +1894,13 @@ msgstr "organização"
 #: udata_front/theme/gouvfr/templates/organization/list.html:23
 #: udata_front/theme/gouvfr/templates/reuse/list.html:42
 msgid "Newest"
-msgstr "O mais recente"
+msgstr "Mais recente"
 
 #: udata_front/theme/gouvfr/templates/organization/display.html:26
 #: udata_front/theme/gouvfr/templates/organization/list.html:24
 #: udata_front/theme/gouvfr/templates/reuse/list.html:43
 msgid "Oldest"
-msgstr "O mais antigo"
+msgstr "Mais antigo"
 
 #: udata_front/theme/gouvfr/templates/organization/display.html:56
 msgid "Modify organization"
@@ -1919,7 +1921,7 @@ msgstr "Esta organização ainda não publicou nenhum conjunto de dados."
 
 #: udata_front/theme/gouvfr/templates/organization/display.html:261
 msgid "What's a dataset ?"
-msgstr "O que é um conjunto de dados?"
+msgstr "O que é um conjunto de dados ?"
 
 #: udata_front/theme/gouvfr/templates/organization/display.html:289
 msgid "This organization hasn't published any reuses yet."
@@ -2007,7 +2009,7 @@ msgstr "artigos"
 
 #: udata_front/theme/gouvfr/templates/post/list.html:27
 msgid "To stay up-to-date, you can subscribe to"
-msgstr "para garantir que não perca nenhuma das últimas notícias em dados.gov.pt e dados abertos, subscreva"
+msgstr "Para garantir que não perca nenhuma das últimas notícias em dados.gov.pt e dados abertos, subscreva"
 
 #: udata_front/theme/gouvfr/templates/post/list.html:30
 msgid "our newsletter."
@@ -2192,7 +2194,7 @@ msgstr "Mudar email"
 
 #: udata_front/theme/gouvfr/templates/security/change_email.html:12
 msgid "You want to change your email? Enter the new email below."
-msgstr ""
+msgstr "Pretende alterar o seu email? Introduza o novo e-mail abaixo."
 
 #: udata_front/theme/gouvfr/templates/security/change_email.html:15
 #: udata_front/theme/gouvfr/templates/security/change_password.html:15
@@ -2211,7 +2213,7 @@ msgstr "Alterar palavra-passe"
 
 #: udata_front/theme/gouvfr/templates/security/change_password.html:12
 msgid "You want to change your password? Enter your current password and new password below."
-msgstr ""
+msgstr "Pretende alterar a sua palavra-passe? Introduza a sua palavra-passe atual e a nova palavra-passe abaixo."
 
 #: udata_front/theme/gouvfr/templates/security/forgot_password.html:11
 #: udata_front/theme/gouvfr/templates/security/forgot_password.html:44
@@ -2226,7 +2228,7 @@ msgstr "Esqueceu-se da sua palavra-passe? Introduza o seu endereço de e-mail ab
 
 #: udata_front/theme/gouvfr/templates/security/forgot_password.html:22
 msgid "Javascript is required to use this page correctly."
-msgstr ""
+msgstr "É necessário Javascript para utilizar esta página corretamente."
 
 #: udata_front/theme/gouvfr/templates/security/forgot_password.html:29
 #: udata_front/theme/gouvfr/templates/security/register_user.html:48
@@ -2252,12 +2254,12 @@ msgstr "Instruções de devolução"
 #: udata_front/theme/gouvfr/templates/security/login_user.html:50
 #: udata_front/theme/gouvfr/templates/security/register_user.html:72
 msgid "Log in with"
-msgstr ""
+msgstr "Iniciar sessão com"
 
 #: udata_front/theme/gouvfr/templates/security/login_user.html:54
 #: udata_front/theme/gouvfr/templates/security/register_user.html:76
 msgid "What is ProConnect ?"
-msgstr ""
+msgstr "O que é o ProConnect?"
 
 #: udata_front/theme/gouvfr/templates/security/login_user.html:65
 msgid "Don't have an account?"
@@ -2269,7 +2271,7 @@ msgstr "Criar uma conta"
 
 #: udata_front/theme/gouvfr/templates/security/register_user.html:17
 msgid "Why create an account? - opens a new window"
-msgstr ""
+msgstr "Porquê criar uma conta? - abre uma nova janela"
 
 #: udata_front/theme/gouvfr/templates/security/register_user.html:19
 msgid "Why create an account?"
@@ -2277,7 +2279,7 @@ msgstr "Porquê criar uma conta?"
 
 #: udata_front/theme/gouvfr/templates/security/register_user.html:29
 msgid "Javascript is required to sign up."
-msgstr "O Javascript é necessário para se registar."
+msgstr "É necessário Javascript para se registar."
 
 #: udata_front/theme/gouvfr/templates/security/register_user.html:41
 #, python-format
@@ -2294,7 +2296,7 @@ msgstr "Submeter"
 
 #: udata_front/theme/gouvfr/templates/site/dashboard.html:5
 msgid "Dashboard"
-msgstr "Painel de instrumentos"
+msgstr "Painel de controlo"
 
 #: udata_front/theme/gouvfr/templates/site/dashboard.html:6
 msgid "Site metrics and activity"
@@ -2306,12 +2308,12 @@ msgstr "actividade"
 
 #: udata_front/theme/gouvfr/templates/site/dashboard.html:13
 msgid "Site dashboard"
-msgstr ""
+msgstr "Painel de controlo do site"
 
 #: udata_front/theme/gouvfr/templates/territories/commune.html:5
 #, python-format
 msgid "Datasets related to the town of %(name)s with INSEE code %(code)s"
-msgstr ""
+msgstr "Conjuntos de dados relativos à cidade de %(name)s com o código INSEE %(code)s"
 
 #: udata_front/theme/gouvfr/templates/territories/commune.html:12
 #: udata_front/theme/gouvfr/templates/territories/departement.html:12
@@ -2319,7 +2321,7 @@ msgstr ""
 #: udata_front/theme/gouvfr/templates/territories/home.html:27
 #: udata_front/theme/gouvfr/templates/territories/region.html:12
 msgid "Territories"
-msgstr ""
+msgstr "Territórios"
 
 #: udata_front/theme/gouvfr/templates/territories/commune.html:15
 msgid "Town:"
@@ -2340,7 +2342,7 @@ msgstr "Conjuntos de dados comunitários %(name)s com código INSEE %(code)s"
 #: udata_front/theme/gouvfr/templates/territories/departement.html:16
 #: udata_front/theme/gouvfr/templates/territories/region.html:15
 msgid "Region:"
-msgstr "Região :"
+msgstr "Região:"
 
 #: udata_front/theme/gouvfr/templates/territories/home.html:5
 #: udata_front/theme/gouvfr/templates/territories/home.html:6
@@ -2354,11 +2356,11 @@ msgstr "Trabalho em curso"
 
 #: udata_front/theme/gouvfr/templates/territories/home.html:23
 msgid "The territories pages are currently being renovated to improve user experience."
-msgstr ""
+msgstr "As páginas dos territórios estão atualmente a ser renovadas para melhorar a experiência do utilizador."
 
 #: udata_front/theme/gouvfr/templates/territories/home.html:29
 msgid "Sorted alphabetically:"
-msgstr ""
+msgstr "Ordenados por ordem alfabética:"
 
 #: udata_front/theme/gouvfr/templates/territories/region.html:5
 #, python-format
@@ -2371,7 +2373,7 @@ msgstr "Nível administrativo"
 
 #: udata_front/theme/gouvfr/templates/territories/territory.html:11
 msgid "The territories pages are no longer maintained. We are working on new territories features."
-msgstr ""
+msgstr "As páginas dos territórios já não são mantidas. Estamos a trabalhar em novas funcionalidades para os territórios."
 
 #: udata_front/theme/gouvfr/templates/territories/territory.html:24
 #, python-format
@@ -2384,11 +2386,11 @@ msgstr "Deseja adicionar os seus próprios conjuntos de dados a esta lista ?"
 
 #: udata_front/theme/gouvfr/templates/territories/territory.html:27
 msgid "Log in / Sign up"
-msgstr "Login / Registo"
+msgstr "Iniciar sessão / Inscrever-se"
 
 #: udata_front/theme/gouvfr/templates/territories/territory.html:29
 msgid "and create files for that territory."
-msgstr ""
+msgstr "e criar ficheiros para esse território."
 
 #: udata_front/theme/gouvfr/templates/topic/browse.html:30
 #: udata_front/theme/gouvfr/templates/topic/browse.html:50
@@ -2457,11 +2459,11 @@ msgstr[1] "%(num)d acompanhamentos"
 
 #: udata_front/theme/gouvfr/templates/user/base.html:148
 msgid "Browse the datasets of this user."
-msgstr ""
+msgstr "Procurar os conjuntos de dados deste utilizador."
 
 #: udata_front/theme/gouvfr/templates/user/base.html:153
 msgid "Browse the reuses of this user."
-msgstr ""
+msgstr "Procurar as reutilizações deste utilizador."
 
 #: udata_front/theme/gouvfr/templates/user/datasets.html:40
 #, python-format
@@ -2578,7 +2580,7 @@ msgid "European Union"
 msgstr "União Europeia"
 
 msgid "Country group"
-msgstr "Mundo"
+msgstr "Grupo de países"
 
 msgid "Country"
 msgstr "Países"
@@ -2593,4 +2595,4 @@ msgid "Parish"
 msgstr "Freguesias"
 
 msgid "INSEE code:"
-msgstr "Código Dicofre:"
+msgstr "Código INEEE:"
