@@ -973,8 +973,8 @@ msgstr "Ligação à documentação"
 #, python-format
 msgid "%(num)d used dataset"
 msgid_plural "%(num)d used datasets"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "conjuntos de dados usado"
+msgstr[1] "conjuntos de dados usados"
 
 #: udata_front/theme/gouvfr/templates/dataservice/display.html:193
 #, python-format
@@ -1113,7 +1113,7 @@ msgstr "Recursos comunitários"
 #: udata_front/theme/gouvfr/templates/organization/display.html:145
 #: udata_front/theme/gouvfr/templates/organization/display.html:185
 msgid "Information"
-msgstr ""
+msgstr "Informação"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:350
 #, python-format
@@ -1141,7 +1141,7 @@ msgstr "Acrescentar uma reutilização"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:422
 msgid "There are no reuses for this dataset yet."
-msgstr ""
+msgstr "Ainda não existem reutilizações para este conjunto de dados."
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:429
 msgid "Publish a reuse"
@@ -1150,11 +1150,11 @@ msgstr "Publicar uma reutilização"
 #: udata_front/theme/gouvfr/templates/dataset/display.html:435
 #: udata_front/theme/gouvfr/templates/organization/display.html:296
 msgid "What's a reuse ?"
-msgstr ""
+msgstr "O que é uma reutilização?"
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:454
 msgid "There are no discussions for this dataset yet."
-msgstr ""
+msgstr "Ainda não existem discussões para este conjunto de dados."
 
 #: udata_front/theme/gouvfr/templates/dataset/display.html:478
 msgid "These resources are published by the community and the producer isn't responsible for them."
@@ -1458,16 +1458,16 @@ msgstr "Assinante desde %(date)s"
 
 #: udata_front/theme/gouvfr/templates/macros/breadcrumb.html:9
 msgid "You're here:"
-msgstr ""
+msgstr "Está aqui:"
 
 #: udata_front/theme/gouvfr/templates/macros/certified.html:5
 #, python-format
 msgid "The identity of this organization is certified by %(certifier)s"
-msgstr ""
+msgstr "A identidade desta organização é certificada por %(certifier)s"
 
 #: udata_front/theme/gouvfr/templates/macros/forms.html:23
-msgid "Expected format : name@domain.fr"
-msgstr ""
+msgid "Expected format : name@domain.pt"
+msgstr "nome@dominio.pt"
 
 #: udata_front/theme/gouvfr/templates/macros/integrate.html:16
 msgid "Copy this"
@@ -1524,12 +1524,12 @@ msgstr "Descrição dos dados não preenchidos"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_toggletip.html:19
 msgid "Files documented"
-msgstr ""
+msgstr "Ficheiros documentados"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_toggletip.html:20
 #: udata_front/theme/gouvfr/templates/macros/quality_score_with_warning_below.html:30
 msgid "Files documentation missing"
-msgstr ""
+msgstr "Documentação de ficheiros em falta"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_toggletip.html:25
 msgid "License filled"
@@ -1583,16 +1583,16 @@ msgstr "Cobertura espacial não fornecida"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_toggletip.html:55
 msgid "All files are available"
-msgstr ""
+msgstr "Todos os ficheiros estão disponíveis"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_toggletip.html:56
 #: udata_front/theme/gouvfr/templates/macros/quality_score_with_warning_below.html:60
 msgid "Some files are unavailable"
-msgstr ""
+msgstr "Alguns ficheiros estão indisponíveis"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_toggletip.html:64
 msgid "Learn more about this indicator - opens a new window"
-msgstr ""
+msgstr "Saiba mais sobre este indicador - abre uma nova janela"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_toggletip.html:66
 msgid "Learn more about this indicator"
@@ -1601,11 +1601,11 @@ msgstr "Mais sobre este indicador"
 #: udata_front/theme/gouvfr/templates/macros/quality_score_with_warning_below.html:10
 #: udata_front/theme/gouvfr/templates/macros/quality_score_with_warning_below.html:13
 msgid "Metadata quality"
-msgstr ""
+msgstr "Qualidade dos metadados"
 
 #: udata_front/theme/gouvfr/templates/macros/quality_score_with_warning_below.html:20
 msgid "Metadata quality may be misleading since metadata info may have been lost from original source. We're currently working on improving this."
-msgstr ""
+msgstr "A qualidade dos metadados pode ser enganadora, uma vez que as informações dos metadados podem ter sido perdidas da fonte original. Neste momento, estamos a trabalhar para melhorar isso."
 
 #: udata_front/theme/gouvfr/templates/macros/search.html:17
 msgid "Sort by"
@@ -1741,7 +1741,7 @@ msgstr "De acordo com a frequência escolhida (%(dataset_frequency)s) a actualiz
 
 #: udata_front/theme/gouvfr/templates/mail/frequency_reminder.html:25
 msgid "Update the dataset and associated files"
-msgstr ""
+msgstr "Atualizar o conjunto de dados e os ficheiros associados"
 
 #: udata_front/theme/gouvfr/templates/mail/membership_refused.html:7
 #, python-format
@@ -1915,15 +1915,15 @@ msgstr "Apresentação"
 
 #: udata_front/theme/gouvfr/templates/organization/display.html:254
 msgid "This organization hasn't published any datasets yet."
-msgstr ""
+msgstr "Esta organização ainda não publicou nenhum conjunto de dados."
 
 #: udata_front/theme/gouvfr/templates/organization/display.html:261
 msgid "What's a dataset ?"
-msgstr ""
+msgstr "O que é um conjunto de dados?"
 
 #: udata_front/theme/gouvfr/templates/organization/display.html:289
 msgid "This organization hasn't published any reuses yet."
-msgstr ""
+msgstr "Esta organização ainda não publicou nenhuma reutilização."
 
 #: udata_front/theme/gouvfr/templates/organization/display.html:314
 msgid "Members"
@@ -1958,7 +1958,7 @@ msgstr "Procura de uma organização"
 #: udata_front/theme/gouvfr/templates/organization/publishing-form.html:6
 #, python-format
 msgid "%(site)s organization publishing form"
-msgstr ""
+msgstr "formulário de publicação da organização"
 
 #: udata_front/theme/gouvfr/templates/post/display.html:35
 #: udata_front/theme/gouvfr/templates/reuse/oembed.html:18
@@ -1976,7 +1976,7 @@ msgstr "Este artigo foi retirado. A célula será permanente nas próximas 24 ho
 
 #: udata_front/theme/gouvfr/templates/post/display.html:114
 msgid "Navigate in the post collection"
-msgstr ""
+msgstr "Navegue na coleção de publicações"
 
 #: udata_front/theme/gouvfr/templates/post/display.html:123
 msgid "Previous post"
@@ -2043,7 +2043,7 @@ msgstr "Tipo"
 
 #: udata_front/theme/gouvfr/templates/reuse/display.html:191
 msgid "There are no discussions for this reuse yet."
-msgstr ""
+msgstr "Ainda não há discussões para esta reutilização."
 
 #: udata_front/theme/gouvfr/templates/reuse/display.html:206
 #, python-format
@@ -2054,11 +2054,11 @@ msgstr[1] ""
 
 #: udata_front/theme/gouvfr/templates/reuse/display.html:217
 msgid "Reuses from the same creator"
-msgstr ""
+msgstr "Reutilizações do mesmo criador"
 
 #: udata_front/theme/gouvfr/templates/reuse/display.html:222
 msgid "There are no other reuses from this creator."
-msgstr ""
+msgstr "Não há outras reutilizações deste criador."
 
 #: udata_front/theme/gouvfr/templates/reuse/list.html:7
 #, python-format
@@ -2154,7 +2154,7 @@ msgstr " por "
 #: udata_front/theme/gouvfr/templates/reuse/publishing-form.html:6
 #, python-format
 msgid "%(site)s reuse publishing form"
-msgstr ""
+msgstr "%(site)s reutilizar formulário de publicação"
 
 #: udata_front/theme/gouvfr/templates/participez/participate-header.html:7
 #: udata_front/theme/gouvfr/templates/participez/participate-header.html:41

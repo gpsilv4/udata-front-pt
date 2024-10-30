@@ -1546,8 +1546,8 @@ msgid "The identity of this organization is certified by %(certifier)s"
 msgstr "L'identité de cette organisation est certifiée par %(certifier)s"
 
 #: udata_front/theme/gouvfr/templates/macros/forms.html:23
-msgid "Expected format : name@domain.fr"
-msgstr "Format attendu : nom@domain.fr"
+msgid "Expected format : name@domain.pt"
+msgstr "Format attendu : nom@domain.pt"
 
 #: udata_front/theme/gouvfr/templates/macros/integrate.html:16
 msgid "Copy this"

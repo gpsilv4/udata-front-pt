@@ -570,5 +570,7 @@
   "Available": "Available",
   "Not checked yet": "Not checked yet",
   "{n} community resources": "{n} community resources",
-  "You haven't published a community resource yet": "You haven't published a community resource yet"
+  "You haven't published a community resource yet": "You haven't published a community resource yet",
+  "Remover dos favoritos": "",
+  "Adicionar aos favoritos": ""
 }
