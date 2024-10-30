@@ -121,7 +121,7 @@
   "Featured": "Featured",
   "Standard": "Standard",
   "Remove from favourites": "Remove from favourites",
-  "Add to favourites": "Add to favourites",
+  "Add to favourites": "Adicionar aos favoritos",
   "See metadata": "See metadata",
   "Data structure": "Data structure",
   "Metadata": "Metadata",
@@ -570,5 +570,7 @@
   "Available": "Available",
   "Not checked yet": "Not checked yet",
   "{n} community resources": "{n} community resources",
-  "You haven't published a community resource yet": "You haven't published a community resource yet"
+  "You haven't published a community resource yet": "You haven't published a community resource yet",
+  "Remover dos favoritos": "",
+  "Adicionar aos favoritos": ""
 }
