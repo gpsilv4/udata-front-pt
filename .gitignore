@@ -83,5 +83,6 @@ cypress/videos
 cypress/screenshots
 data/
 logs/
+saml/
 udata-fs/
 uwsgi/
