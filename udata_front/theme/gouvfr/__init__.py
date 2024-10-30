@@ -131,13 +131,14 @@ nav.Bar("gouvfr_opendata", opendata_links)
 
 platform_links = [
     nav.Item(_("Guides"), None, url=current_app.config.get("GUIDES_URL", "#")),
+    nav.Item(_("API Tutorial"), "gouvfr.show_page", args={"slug": "api-tutorial"}),
     nav.Item(_("Roadmap and news"), "gouvfr.show_page", args={"slug": "roadmap"}),
-    nav.Item(_("Contact us"), None, url="https://support.data.gouv.fr"),
-    nav.Item(
-        _("Give us your feedback"),
-        None,
-        url=current_app.config.get("FEEDBACK_FORM_URL", "#"),
-    ),
+    nav.Item(_("Contact us"), "gouvfr_faq.contact", args={"slug": "contact"}),
+    # nav.Item(
+    #     _("Give us your feedback"),
+    #     None,
+    #     url=current_app.config.get("FEEDBACK_FORM_URL", "#"),
+    # ),
     nav.Item(_("Statistics"), "site.dashboard"),
 ]
 
@@ -158,15 +159,18 @@ nav.Bar("gouvfr_platform", platform_links)
 # nav.Bar("gouvfr_resources", resources_links)
 
 footer_links = [
-    nav.Item(_("Licences"), "gouvfr.show_page", args={"slug": "faqs/licences"}),
+    nav.Item(_("Licences"), "gouvfr.show_page", args={"slug": "faqs/licenses/"}),
     nav.Item(_("Terms of use"), "gouvfr.show_page", args={"slug": "faqs/terms"}),
     nav.Item(_("Tracking and privacy"), "gouvfr.suivi"),
-    nav.Item(_("Legal notice"), "gouvfr.show_page", args={"slug": "faqs/legal-notice"}),
-    nav.Item(
-        _("Accessibility: partially compliant"),
-        "gouvfr.show_page",
-        args={"slug": "faqs/accessibility"},
-    ),
+    # nav.Item(_("Legal notice"), "gouvfr.show_page", args={"slug": "faqs/legal-notice"}),
+    nav.Item(_('Acessibilidade'),
+             'gouvfr.show_page', args={'slug': 'faqs/acessibilidade'}),
+
+    # nav.Item(
+    #     _("Accessibility: partially compliant"),
+    #     "gouvfr.show_page",
+    #     args={"slug": "faqs/accessibility"},
+    # ),
 ]
 
 nav.Bar("gouvfr_footer", footer_links)
