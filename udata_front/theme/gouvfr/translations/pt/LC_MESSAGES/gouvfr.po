@@ -2573,6 +2573,10 @@ msgstr "Reutilizações mais recentes"
 msgid "Transfer"
 msgstr "Transferir"
 
+#: udata_front/theme/gouvfr/__init__.py:133
+msgid "About us"
+msgstr "Sobre nós"
+
 msgid "World"
 msgstr "Mundo"
 
