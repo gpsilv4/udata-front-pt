@@ -2283,7 +2283,8 @@ msgstr "É necessário Javascript para se registar."
 
 #: udata_front/theme/gouvfr/templates/security/register_user.html:41
 #, python-format
-msgid "I have read and accept <a href=\"%(url)s\"> the terms and conditions of the service.</a>"
+msgid "I have read and accept <a href=\"%(url)s\"> the terms and conditions of the "
+"service.</a>"
 msgstr "Eu li e aceito <a href=\"%(url)s\"> os termos e condições de utilização do serviço.</a>"
 
 #: udata_front/theme/gouvfr/templates/security/send_confirmation.html:10
