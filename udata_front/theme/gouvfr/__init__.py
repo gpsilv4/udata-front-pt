@@ -130,7 +130,7 @@ nav.Bar("gouvfr_opendata", opendata_links)
 
 
 platform_links = [
-    nav.Item(_("Guides"), None, url=current_app.config.get("GUIDES_URL", "#")),
+    nav.Item(_("Sobre Dados Gov"), "gouvfr.show_page", args={"slug": "faqs/about_dadosgov"}),
     nav.Item(_("API Tutorial"), "gouvfr.show_page", args={"slug": "api-tutorial"}),
     nav.Item(_("Roadmap and news"), "gouvfr.show_page", args={"slug": "roadmap"}),
     nav.Item(_("Contact us"), "gouvfr_faq.contact", args={"slug": "contact"}),
@@ -163,14 +163,8 @@ footer_links = [
     nav.Item(_("Terms of use"), "gouvfr.show_page", args={"slug": "faqs/terms"}),
     nav.Item(_("Tracking and privacy"), "gouvfr.suivi"),
     # nav.Item(_("Legal notice"), "gouvfr.show_page", args={"slug": "faqs/legal-notice"}),
-    nav.Item(_('Acessibilidade'),
+    nav.Item(_('Accessibility'),
              'gouvfr.show_page', args={'slug': 'faqs/acessibilidade'}),
-
-    # nav.Item(
-    #     _("Accessibility: partially compliant"),
-    #     "gouvfr.show_page",
-    #     args={"slug": "faqs/accessibility"},
-    # ),
 ]
 
 nav.Bar("gouvfr_footer", footer_links)
