@@ -2577,6 +2577,10 @@ msgstr "Transferir"
 msgid "About us"
 msgstr "Sobre nós"
 
+#: udata_front/theme/gouvfr/templates/security/register_saml.html:40
+msgid "User NIC"
+msgstr "Utilizador NIC"
+
 msgid "World"
 msgstr "Mundo"
 
