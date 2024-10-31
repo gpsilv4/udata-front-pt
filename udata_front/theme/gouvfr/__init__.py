@@ -130,7 +130,12 @@ nav.Bar("gouvfr_opendata", opendata_links)
 
 
 platform_links = [
+<<<<<<< HEAD
     nav.Item(_("Sobre Dados Gov"), "gouvfr.show_page", args={"slug": "faqs/about_dadosgov"}),
+=======
+    nav.Item(_("About us"), "gouvfr.show_page", args={"slug": "faqs/about_dadosgov"}),
+    # nav.Item(_("Guides"), None, url=current_app.config.get("GUIDES_URL", "#")),
+>>>>>>> 93721f14d135058ccc83bda463d4c047e479c0da
     nav.Item(_("API Tutorial"), "gouvfr.show_page", args={"slug": "api-tutorial"}),
     nav.Item(_("Roadmap and news"), "gouvfr.show_page", args={"slug": "roadmap"}),
     nav.Item(_("Contact us"), "gouvfr_faq.contact", args={"slug": "contact"}),
