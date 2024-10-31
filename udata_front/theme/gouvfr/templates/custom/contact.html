@@ -17,7 +17,7 @@
                         <form class="form" method="post" action="{{ url_for('gouvfr_faq.contact') }}" data-bitwarden-watching="1">
                             <h1 class="fr-h4 fr-mb-0">Contate-nos</h1>
                                 <p class="fr-mt-2w fr-mb-1w fr-text--xs text-align-left">
-                                    Campos precedidos por uma estrela (<span class="required-field-star">*</span>) são obrigatórios.
+                                    {{ _("Fields preceded by a star (<span class='required-field-star'>*</span>) are required.") }}
                                 </p>
                                 <div class="fr-input-group field ">
                                     <label for="name" class="fr-label required">
