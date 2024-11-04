@@ -89,14 +89,20 @@ def sp_initiated():
     faa = FAAALevel(text=str(current_app.config.get('SECURITY_SAML_FAAALEVEL')))
 
     spcertenc = RequestedAttributes([
-        RequestedAttribute(name="http://interop.gov.pt/MDC/Cidadao/CorreioElectronico",
+        RequestedAttribute(name="http://eidas.europa.eu/attributes/naturalperson/PersonIdentifier",
                            name_format="urn:oasis:names:tc:SAML:2.0:attrname-format:uri", is_required='True'),
-        RequestedAttribute(name="http://interop.gov.pt/MDC/Cidadao/NICCifrado",
+        RequestedAttribute(name="http://eidas.europa.eu/attributes/naturalperson/CurrentFamilyName",
                            name_format="urn:oasis:names:tc:SAML:2.0:attrname-format:uri", is_required='False'),
-        RequestedAttribute(name="http://interop.gov.pt/MDC/Cidadao/NomeProprio",
+        RequestedAttribute(name="http://eidas.europa.eu/attributes/naturalperson/CurrentGivenName",
                            name_format="urn:oasis:names:tc:SAML:2.0:attrname-format:uri", is_required='False'),
-        RequestedAttribute(name="http://interop.gov.pt/MDC/Cidadao/NomeApelido",
-                           name_format="urn:oasis:names:tc:SAML:2.0:attrname-format:uri", is_required='False')
+        RequestedAttribute(name="http://eidas.europa.eu/attributes/naturalperson/DateOfBirth",
+                           name_format="urn:oasis:names:tc:SAML:2.0:attrname-format:uri", is_required='False'),
+        RequestedAttribute(name="http://eidas.europa.eu/attributes/naturalperson/CurrentAddress",
+                           name_format="urn:oasis:names:tc:SAML:2.0:attrname-format:uri", is_required='False'),
+        RequestedAttribute(name="http://eidas.europa.eu/attributes/naturalperson/Gender",
+                           name_format="urn:oasis:names:tc:SAML:2.0:attrname-format:uri", is_required='False'),
+        RequestedAttribute(name="http://eidas.europa.eu/attributes/naturalperson/PlaceOfBirth",
+                           name_format="urn:oasis:names:tc:SAML:2.0:attrname-format:uri", is_required='False'),
     ])
 
     extensions = Extensions(
