@@ -2535,8 +2535,8 @@ msgstr "Últimos conjuntos de dados"
 #, python-format
 msgid "%(num)d Main file"
 msgid_plural "%(num)d Main files"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ficheiro principal"
+msgstr[1] "Ficheiros principais"
 
 #: udata_front/views/dataset.py:160
 #, python-format
@@ -2605,3 +2605,10 @@ msgstr "Freguesias"
 
 msgid "INSEE code:"
 msgstr "Código INEEE:"
+
+msgid "Stable"
+msgstr "estável"
+
+msgid "Identifier"
+msgstr "Identificador"
+
