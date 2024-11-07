@@ -6,7 +6,13 @@
     >
       <div v-if="iconHtml" class="fr-mr-1w fr-grid-row" v-html="iconHtml"></div>
       <div v-else-if="icon" :class="icon" class="fr-mr-1w fr-icon--sm" aria-hidden="true"></div>
-      <router-link :to="to">{{ label }}</router-link>
+      <router-link :to="to">
+        <TextClamp
+          :text="label"
+          :auto-resize="true"
+          :max-lines="1"
+        />
+      </router-link>
     </div>
   </li>
 </template>
