@@ -2612,3 +2612,9 @@ msgstr "estável"
 msgid "Identifier"
 msgstr "Identificador"
 
+msgid "Remove from favourites"
+msgstr "Remover dos favoritos"
+
+msgid "Add to favourites"
+msgstr "Adicionar aos favoritos"
+
