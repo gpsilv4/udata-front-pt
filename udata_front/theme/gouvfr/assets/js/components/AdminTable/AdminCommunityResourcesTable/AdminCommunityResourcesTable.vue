@@ -32,11 +32,25 @@
     <tbody>
       <tr v-for="communityResource in communityResources">
         <td>
-          <AdminContentWithTooltip>
+          <AdminContentWithTooltip class="fr-text--bold">
             <a class="fr-link fr-reset-link" :href="getCommunityResourceLinkToAdmin(communityResource)">
               <TextClamp :text="communityResource.title" :auto-resize="true" :max-lines="2"/>
             </a>
           </AdminContentWithTooltip>
+          <p v-if="datasets[communityResource.dataset.id]">
+            <a
+              class="fr-link inline-flex"
+              :href="datasets[communityResource.dataset.id]?.page"
+            >
+              <Vicon :height="12" class="self-center" :name="getSubjectTypeIcon('Dataset')"/>
+              <TextClamp
+                class="overflow-wrap-anywhere"
+                :text="datasets[communityResource.dataset.id]?.title"
+                :auto-resize="true"
+                :max-lines="1"
+              />
+            </a>
+          </p>
         </td>
         <td>
           <AdminBadge :type="getStatus(communityResource).type">{{ getStatus(communityResource).label }}</AdminBadge>

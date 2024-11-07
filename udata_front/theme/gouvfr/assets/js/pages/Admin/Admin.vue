@@ -38,7 +38,7 @@
           </div>
         </nav>
       </div>
-      <div class="fr-col-12 fr-col-md-8 fr-col-lg-9 fr-col-xl-10 h-100 fr-px-2w">
+      <div class="fr-col-12 fr-col-md-8 fr-col-lg-9 fr-col-xl-10 h-100 fr-px-2w overflow-auto">
         <router-view :key="route.fullPath" class="fr-container--fluid"></router-view>
       </div>
     </div>

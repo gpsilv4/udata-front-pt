@@ -10,6 +10,7 @@ export type BaseReuse = Owned & {
   topic: string;
   type: string;
   url: string;
+  private: boolean;
 };
 
 export type NewReuse = Omit<BaseReuse, keyof OwnedWithId> & OwnedWithId;

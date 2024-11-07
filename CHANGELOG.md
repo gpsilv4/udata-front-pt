@@ -1,5 +1,12 @@
 # Changelog
 
+## 5.2.4 (2024-10-22)
+
+- Paginate datasets in dataservice display [#560](https://github.com/datagouv/udata-front/pull/560) [#568](https://github.com/datagouv/udata-front/pull/568)
+- Beta admin adjustments [#557](https://github.com/datagouv/udata-front/pull/557)
+- Fix schema tooltip position [#561](https://github.com/datagouv/udata-front/pull/561)
+- Add Parquet file url in download tab [#563](https://github.com/datagouv/udata-front/pull/563)
+
 ## 5.2.3 (2024-10-08)
 
 - Adapt to discussion csv export refactor [#543](https://github.com/datagouv/udata-front/pull/543)

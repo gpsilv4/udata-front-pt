@@ -22,7 +22,7 @@
   "This file is following a schema: ": "This file is following a schema: ",
   "See validation report": "See validation report",
   "URL": "URL",
-  "MIME Type": "MIME Type",
+  "MIME Type": "Tipo MIME",
   "Created on": "Criado em",
   "Modified on": "Modificado em",
   "Size": "Size",
@@ -105,7 +105,7 @@
   "Original format": "Original format",
   "Format {format}": "Format {format}",
   "Data": "Data",
-  "Description": "Description",
+  "Description": "Descrição",
   "Downloads": "Downloads",
   "Schema:": "Schema",
   "Copy embed": "Copy embed",
@@ -116,7 +116,7 @@
   "ID copied!": "ID copied!",
   "Copy checksum": "Copy checksum",
   "Checksum copied!": "Checksum copied!",
-  "Type": "Type",
+  "Type": "Tipo",
   "Format": "Format",
   "downloads": "downloads",
   "Visit": "Visit",
@@ -137,5 +137,6 @@
   "{n} resources downloads": "{n} resources downloads",
   "{n} reuses": "{n} reuses",
   "Close": "Close",
-  " in ": ""
+  " in ": " in ",
+  "Auto-generated formats from {platform}": "Auto-generated formats from {platform}"
 }
