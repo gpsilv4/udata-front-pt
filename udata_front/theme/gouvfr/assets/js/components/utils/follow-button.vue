@@ -29,8 +29,8 @@ The `url` prop is the API URL.
       </svg>
       </span>
       <span class="fr-ml-1w">
-        <template v-if="following">{{ $t("Remover dos favoritos") }}</template>
-        <template v-else>{{ $t("Adicionar aos favoritos") }}</template>
+        <template v-if="following">{{ $t("Remove from favourites") }}</template>
+        <template v-else>{{ $t("Add to favourites") }}</template>
       </span>
   </button>
 </template>
