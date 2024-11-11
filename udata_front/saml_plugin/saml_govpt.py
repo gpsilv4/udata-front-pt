@@ -267,3 +267,173 @@ def saml_logout():
 
     post_message = http_form_post_message(message=logout_request, location=destination)
     return post_message['data']
+
+
+#######################################
+#              eIDAS                  # 
+#######################################
+
+
+def get_saml_client():
+    acs_url = url_for("eidas.callback", _external=True)
+    logout_url = url_for("eidas.logout_callback", _external=True)
+
+    settings = {
+        'entityid': current_app.config.get('EIDAS_ENTITY_ID'),
+        'name': current_app.config.get('EIDAS_ENTITY_NAME'),
+        'key_file': current_app.config.get('EIDAS_KEY_FILE'),
+        'cert_file': current_app.config.get('EIDAS_CERT_FILE'),
+        'metadata': {
+            "local": [current_app.config.get('EIDAS_METADATA_FILE')]
+        },
+        'accepted_time_diff': 60,
+        'service': {
+            'sp': {
+                'endpoints': {
+                    'assertion_consumer_service': [
+                        (acs_url, BINDING_HTTP_REDIRECT),
+                        (acs_url, BINDING_HTTP_POST)
+                    ],
+                    'single_logout_service': [
+                        (logout_url, BINDING_HTTP_REDIRECT),
+                        (logout_url, BINDING_HTTP_POST),
+                    ],
+                },
+                'allow_unsolicited': True,
+                'authn_requests_signed': True,
+                'logout_requests_signed': True,
+                'want_assertions_signed': True,
+                'want_response_signed': True,
+            },
+        },
+    }
+    sp_config = Saml2Config()
+    sp_config.load(settings)
+    return Saml2Client(config=sp_config)
+
+@autenticacao_gov.route('/saml/eidas')
+@anonymous_user_required
+def login():
+    client = get_saml_client()
+    
+    # eIDAS specific requested attributes
+    requested_attributes = {
+        'attributes': [
+            {
+                'name': 'http://eidas.europa.eu/attributes/naturalperson/PersonIdentifier',
+                'required': True,
+            },
+            {
+                'name': 'http://eidas.europa.eu/attributes/naturalperson/CurrentGivenName',
+                'required': True,
+            },
+            {
+                'name': 'http://eidas.europa.eu/attributes/naturalperson/CurrentFamilyName',
+                'required': True,
+            },
+            {
+                'name': 'http://eidas.europa.eu/attributes/naturalperson/DateOfBirth',
+                'required': False,
+            },
+            {
+                'name': 'http://eidas.europa.eu/attributes/naturalperson/PlaceOfBirth',
+                'required': False,
+            }
+        ]
+    }
+
+    extensions = Extensions(extension_elements=[
+        element_to_extension_element(requested_attributes)
+    ])
+
+    args = {
+        'binding': BINDING_HTTP_POST,
+        'relay_state': 'eidas-auth',
+        'sign': True,
+        'force_authn': 'true',
+        'is_passive': 'false',
+        'nameid_format': NAMEID_FORMAT_UNSPECIFIED,
+        'extensions': extensions
+    }
+
+    _, info = client.prepare_for_authenticate(**args)
+    return info['data']
+
+@autenticacao_gov.route('/saml/callback', methods=['POST'])
+@csrf.exempt
+def callback():
+    client = get_saml_client()
+    
+    try:
+        saml_response = base64.b64decode(request.form['SAMLResponse'])
+        response_text = saml_response.decode('utf-8')
+        root = ET.fromstring(response_text)
+        
+        # Parse SAML response
+        authn_response = client.parse_authn_request_response(
+            request.form['SAMLResponse'],
+            entity.BINDING_HTTP_POST
+        )
+        
+        # Extract eIDAS attributes
+        ns = {'saml2': 'urn:oasis:names:tc:SAML:2.0:assertion'}
+        attributes = {}
+        
+        for attribute in root.findall('.//saml2:Attribute', ns):
+            name = attribute.get('Name')
+            value = attribute.find('.//saml2:AttributeValue', ns)
+            if value is not None:
+                attributes[name] = value.text
+
+        # Extract user information
+        person_id = attributes.get('http://eidas.europa.eu/attributes/naturalperson/PersonIdentifier')
+        first_name = attributes.get('http://eidas.europa.eu/attributes/naturalperson/CurrentGivenName')
+        last_name = attributes.get('http://eidas.europa.eu/attributes/naturalperson/CurrentFamilyName')
+        
+        # Find or create user
+        user = datastore.find_user(eidas_id=person_id)
+        
+        if not user:
+            session['eidas_data'] = {
+                'person_id': person_id,
+                'first_name': first_name,
+                'last_name': last_name,
+            }
+            return redirect(url_for('eidas.register'))
+            
+        login_user(user)
+        session['eidas_login'] = True
+        return redirect(url_for('site.home'))
+        
+    except Exception as e:
+        current_app.logger.error(f"eIDAS authentication error: {str(e)}")
+        do_flash("Authentication failed. Please try again.", "error")
+        return redirect(url_for('security.login'))
+
+@autenticacao_gov.route('/saml/eidas_logout')
+def logout():
+    client = get_saml_client()
+    
+    name_id = NameID(format=NAMEID_FORMAT_UNSPECIFIED,
+                    text="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified")
+    
+    destination = current_app.config.get('EIDAS_IDP_URL')
+    
+    _, logout_request = client.create_logout_request(
+        name_id=name_id,
+        destination=destination,
+        issuer_entity_id=current_app.config.get('EIDAS_ENTITY_ID'),
+        sign=True
+    )
+    
+    return http_form_post_message(
+        message=logout_request,
+        location=destination
+    )['data']
+
+@autenticacao_gov.route('/saml/logout_callback', methods=['POST'])
+@csrf.exempt
+def logout_callback():
+    session.pop('eidas_login', None)
+    logout_user()
+    return redirect(url_for('site.home'))

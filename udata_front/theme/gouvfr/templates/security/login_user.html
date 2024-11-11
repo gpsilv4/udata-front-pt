@@ -59,11 +59,10 @@
                 <p class="fr-hr-or"><span class="fr-hr-or-text">{{ _('or') }}</span></p>
                 <div class="fr-connect-group">
                     <a title="{{ _('Login') }}"
-                        id="sbmtLoginCC"
-                        href="{{ url_for('eidas.sp_initiated') }}"
-                        class="btn btn-primary btn-block btn-lg"
-                        >
-                        <img src="{{ theme_static('img/eidas.png') }}" />
+                       id="sbmtLoginCC"
+                       href="{{ url_for('saml.login') }}" 
+                       class="btn btn-primary btn-block btn-lg">
+                        <img src="{{ theme_static('img/eidas.png') }}" alt="eIDAS logo"/>
                     </a>
                     <p class="info">
                         *Utilize o Serviços Eletrônicos de Identificação, Autenticação e Confiança Europeu

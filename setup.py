@@ -62,7 +62,6 @@ setup(
         'udata.views': [
             'gouvfr_faqs = udata_front.faqs_plugin',
             'gouvfr_saml = udata_front.saml_plugin',
-            'gouvfr_eidas = udata_front.eidas_plugin',
         ],
         'udata.tasks': [
             'front = udata_front.tasks',
