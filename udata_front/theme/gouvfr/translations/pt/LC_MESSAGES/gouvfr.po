@@ -1029,7 +1029,7 @@ msgstr "A partir de "
 #: udata_front/theme/gouvfr/templates/dataset/card-sm.html:77
 #, python-format
 msgid "Updated %(date)s"
-msgstr "Atualizado %(date)s"
+msgstr "Actualizado %(date)s"
 
 #: udata_front/theme/gouvfr/templates/dataset/card-lg.html:103
 #: udata_front/theme/gouvfr/templates/organization/card.html:30
@@ -1364,7 +1364,7 @@ msgstr "esquema:"
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:29
 #, python-format
 msgid "Updated on %(date)s"
-msgstr "Actualizado em %(date)s"
+msgstr "Actualizado à %(date)s"
 
 #: udata_front/theme/gouvfr/templates/dataset/resource/card.html:36
 msgid "downloads"
