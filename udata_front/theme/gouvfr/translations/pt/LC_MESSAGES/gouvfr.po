@@ -2618,3 +2618,5 @@ msgstr "Remover dos favoritos"
 msgid "Add to favourites"
 msgstr "Adicionar aos favoritos"
 
+msgid "days ago"
+msgstr "à dias"
